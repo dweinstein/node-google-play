@@ -1,6 +1,7 @@
 {
   "name": "node-googleplay-api",
   "description": "use google play protobuf api in node",
+  "keywords": ["google", "play store", "play", "api", "crawler"],
   "version": "0.0.1",
   "main": "index.js",
   "private": false,
