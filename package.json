@@ -1,0 +1,37 @@
+{
+  "name": "node-googleplay-api",
+  "description": "use google play protobuf api in node",
+  "version": "0.0.1",
+  "main": "index.js",
+  "private": false,
+  "homepage": "https://github.com/dweinstein/node-google-play",
+  "bugs": "https://github.com/dweinstein/node-google-play/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dweinstein/node-google-play.git"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "json-stable-stringify": "~1.0.0",
+    "bluebird": "~2.3.6",
+    "lodash": "~2.4.1",
+    "protobuf": "~0.11.0",
+    "request-debug": "~0.1.1",
+    "request": "~2.47.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "chai-as-promised": "^4.1.1",
+    "lodash": "^2.4.1",
+    "mocha": "^1.21.4",
+    "sinon": "^1.10.3",
+    "sinon-as-promised": "^1.1.0",
+    "sinon-chai": "^2.5.0"
+  }
+}
