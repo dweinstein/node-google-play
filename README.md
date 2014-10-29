@@ -1,8 +1,3 @@
-# Build protobuf .desc
-```
-± % protoc --descriptor_set_out=googleplay.desc --include_imports googleplay.proto
-```
-
 # Usage
 ```
 var api = GooglePlay(
@@ -16,8 +11,22 @@ api.login()
 }).then(console.log);
 ```
 
+# Build protobuf .desc
+
+*This has already been done for you, for the specific Android device being emulated by this library.*
+
+```
+± % protoc --descriptor_set_out=googleplay.desc --include_imports googleplay.proto
+```
+
 # Working
 - `details`, `related`, `getDownloadInfo`
+
+# TODO
+- [ ] bulk detail requests
+- [ ] download files
+- [ ] support additional device configurations and user agents.
+- see other `@todo` markings in the code.
 
 # Examples
 
@@ -76,7 +85,7 @@ api.login()
           "restriction": 1,
           "perdeviceavailabilityrestriction": [
             {
-              "androidId": "3737695171748979983",
+              "androidId": "xxxxxxxxxxxxxxx9983",
               "deviceRestriction": 1,
               "channelId": "83938807"
             }
