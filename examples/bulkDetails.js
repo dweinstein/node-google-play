@@ -3,7 +3,7 @@ var GooglePlayAPI = require('../lib/api').GooglePlayAPI;
 var use_cache = true;
 var debug = false;
 
-function getRelatedApps(pkg) {
+function getBulkDetails(pkgs) {
   var api = GooglePlayAPI(
     process.env.GOOGLE_LOGIN, process.env.GOOGLE_PASSWORD,
     process.env.ANDROID_ID,
@@ -13,11 +13,11 @@ function getRelatedApps(pkg) {
 
   return api.login()
   .then(function() {
-    api.related(pkg).then(function (res) {
+    api.bulkDetails(pkgs).then(function (res) {
       console.log('%j', res);
     });
   });
 }
 
-getRelatedApps("com.viber.voip");
+getBulkDetails(['com.viber.voip', 'air.WatchESPN']);
 
