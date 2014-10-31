@@ -2,7 +2,7 @@
   "name": "node-googleplay-api",
   "description": "use google play protobuf api in node",
   "keywords": ["google", "play store", "play", "api", "crawler"],
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "index.js",
   "private": false,
   "homepage": "https://github.com/dweinstein/node-google-play",
