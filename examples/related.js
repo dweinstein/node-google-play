@@ -15,9 +15,6 @@ function getRelatedApps(pkg) {
   .then(function() {
     api.related(pkg).then(function (res) {
       console.log('%j', res);
-    })
-    .lastly(function () {
-      process.exit(0);
     });
   });
 }

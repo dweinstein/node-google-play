@@ -15,9 +15,6 @@ function getAppDetails(pkg) {
   .then(function() {
     api.details(pkg).then(function (res) {
       console.log('%j', res);
-    })
-    .lastly(function () {
-      process.exit(0);
     });
   });
 }

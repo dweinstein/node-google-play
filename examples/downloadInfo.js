@@ -22,9 +22,6 @@ function getDownloadInfo(pkg) {
     })
     .then(function (info) {
       console.log('%j', info);
-    })
-    .lastly(function () {
-      process.exit(0);
     });
   });
 }
