@@ -23,7 +23,7 @@ api.login()
 - `details`, `related`, `getDownloadInfo`
 
 # TODO
-- [ ] bulk detail requests
+- [x] bulk detail requests
 - [ ] download files
 - [ ] support additional device configurations and user agents.
 - see other `@todo` markings in the code.
