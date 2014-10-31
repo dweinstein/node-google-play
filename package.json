@@ -12,7 +12,8 @@
     "url": "https://github.com/dweinstein/node-google-play.git"
   },
   "files": [
-    "lib"
+    "lib",
+    "index.js"
   ],
   "scripts": {
     "start": "node server.js",
