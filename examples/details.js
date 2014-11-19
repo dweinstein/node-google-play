@@ -1,6 +1,6 @@
 var GooglePlayAPI = require('../lib/api').GooglePlayAPI;
 
-var use_cache = true;
+var use_cache = false;
 var debug = false;
 
 function getAppDetails(pkg) {
