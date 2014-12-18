@@ -1,7 +1,13 @@
 {
   "name": "node-googleplay-api",
   "description": "use google play protobuf api in node",
-  "keywords": ["google", "play store", "play", "api", "crawler"],
+  "keywords": [
+    "google",
+    "play store",
+    "play",
+    "api",
+    "crawler"
+  ],
   "version": "0.0.8",
   "main": "index.js",
   "private": false,
@@ -23,7 +29,7 @@
     "json-stable-stringify": "~1.0.0",
     "bluebird": "~2.3.6",
     "lodash": "~2.4.1",
-    "protobuf": "~0.11.0",
+    "protobuf": "git+https://github.com/dweinstein/protobuf.git#lossy-int64-conversions",
     "request-debug": "~0.1.1",
     "request": "~2.47.0"
   },

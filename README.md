@@ -1,14 +1,12 @@
 # Usage
 ```
-var api = GooglePlay(
-  process.env.GOOGLE_LOGIN, process.env.GOOGLE_PASSWORD,
-  process.env.ANDROID_ID
-);
+  var api = require('node-google-play').GooglePlayAPI(
+    process.env.GOOGLE_LOGIN, process.env.GOOGLE_PASSWORD,
+    process.env.ANDROID_ID
+  );
 
-api.login()
-.then(function () {
-  return api.details("com.viber.voip");
-}).then(console.log);
+  api.details("com.viber.voip")
+  .then(console.log);
 ```
 
 # Build protobuf .desc
@@ -20,7 +18,7 @@ api.login()
 ```
 
 # Working
-- `details`, `related`, `getDownloadInfo`
+- `details`, `related`, `getDownloadInfo`, `delivery`
 
 # TODO
 - [x] bulk detail requests
@@ -74,7 +72,7 @@ api.login()
         "creator": "Skype",
         "offer": [
           {
-            "micros": "0",
+            "micros": 0,
             "currencyCode": "USD",
             "formattedAmount": "Free",
             "checkoutFlowRequired": false,
@@ -85,9 +83,9 @@ api.login()
           "restriction": 1,
           "perdeviceavailabilityrestriction": [
             {
-              "androidId": "xxxxxxxxxxxxxxx9983",
+              "androidId": xxxxxxxxxxxxxxx9983,
               "deviceRestriction": 1,
-              "channelId": "83938807"
+              "channelId": 83938807
             }
           ],
           "availableIfOwned": true

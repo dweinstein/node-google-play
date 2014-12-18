@@ -11,11 +11,8 @@ function getAppDetails(pkg) {
     debug
   );
 
-  return api.login()
-  .then(function() {
-    api.details(pkg).then(function (res) {
-      console.log('%j', res);
-    });
+  return api.details(pkg).then(function (res) {
+    console.log('%j', res);
   });
 }
 
