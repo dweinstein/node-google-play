@@ -12,16 +12,14 @@ function getDownloadInfo(pkg) {
     debug
   );
 
-  return api.login()
-  .then(function() {
-    api.details(pkg).then(function (res) {
-      return res.details.appDetails.versionCode;
-    })
-    .then(function (versionCode) {
-      return api.getDownloadInfo(pkg, versionCode);
-    })
-    .then(function (info) {
-      console.log('%j', info);
+  return api.details(pkg).then(function (res) {
+    return res.details.appDetails.versionCode;
+  })
+  .then(function (versionCode) {
+    var fs = require('fs');
+    var fStream = fs.createWriteStream(pkg+'.apk');
+    api.download(pkg, versionCode).then(function (res) {
+      res.pipe(fStream);
     });
   });
 }
