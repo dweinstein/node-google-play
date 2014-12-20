@@ -8,7 +8,7 @@
     "api",
     "crawler"
   ],
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "index.js",
   "private": false,
   "homepage": "https://github.com/dweinstein/node-google-play",
