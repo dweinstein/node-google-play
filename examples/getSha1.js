@@ -18,15 +18,27 @@ function decode_digest (str) {
 }
 
 function getDeliveryDataVc(pkg, vc) {
-  return api.getDeliveryData(pkg, vc)
+  return api.deliveryData(pkg, vc)
   .then(function (info) {
-    console.log(decode_digest(info.signature));
+    return signatureToSha1(info.signature);
   });
+}
+
+function signatureToSha1(sig) {
+  return decode_digest(sig);
 }
 
 var argv = require('minimist')(process.argv.slice(2));
 var pkg = argv._[0] || argv.p || "com.MediaConverter";
-var vc = argv._[1] || argv.v || 6;
+var vc = argv._[1] || argv.v;
 
-getDeliveryDataVc(pkg, vc);
+return api.details(pkg)
+.then(function (res) {
+  vc = vc || res.details.appDetails.versionCode;
+  return getDeliveryDataVc(pkg, vc)
+  .then(function (res) {
+    console.log('%j', [pkg, vc, res]);
+  });
+});
+
 

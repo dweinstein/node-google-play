@@ -16,5 +16,7 @@ function getAppDetails(pkg) {
   });
 }
 
-getAppDetails("com.viber.voip");
+var argv = require('minimist')(process.argv.slice(2));
+var pkg = argv._[0] || argv.p || "com.viber.voip";
+getAppDetails(pkg);
 

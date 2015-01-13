@@ -18,7 +18,7 @@ function getDownloadInfo(pkg) {
       return res.details.appDetails.versionCode;
     })
     .then(function (versionCode) {
-      return api.getDownloadInfo(pkg, versionCode);
+      return api.downloadInfo(pkg, versionCode);
     })
     .then(function (info) {
       console.log('%j', info);
