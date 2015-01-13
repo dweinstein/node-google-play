@@ -17,7 +17,7 @@ function getDeliveryData(pkg) {
       return res.details.appDetails.versionCode;
     })
     .then(function (versionCode) {
-      return api.getDeliveryData(pkg, versionCode);
+      return api.deliveryData(pkg, versionCode);
     })
     .then(function (info) {
       console.log('%j', info);
@@ -28,7 +28,7 @@ function getDeliveryData(pkg) {
 function getDeliveryDataVc(pkg, vc) {
   return api.login()
   .then(function() {
-    return api.getDeliveryData(pkg, vc);
+    return api.deliveryData(pkg, vc);
   })
   .then(function (info) {
     console.log('%j', info);
