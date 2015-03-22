@@ -3,7 +3,9 @@ var GooglePlayAPI = require('../lib/api').GooglePlayAPI;
 var use_cache = false;
 var debug = false;
 
-function getDownloadInfo(pkg) {
+var fs = require('fs');
+
+function downloadToFile(pkg, vc) {
 
   var api = GooglePlayAPI(
     process.env.GOOGLE_LOGIN, process.env.GOOGLE_PASSWORD,
@@ -13,17 +15,19 @@ function getDownloadInfo(pkg) {
   );
 
   return api.details(pkg).then(function (res) {
-    return res.details.appDetails.versionCode;
+    return vc || res.details.appDetails.versionCode;
   })
   .then(function (versionCode) {
-    var fs = require('fs');
     var fStream = fs.createWriteStream(pkg+'.apk');
-    api.download(pkg, versionCode).then(function (res) {
+    return api.download(pkg, versionCode).then(function (res) {
       res.pipe(fStream);
     });
   });
 }
 
 
-getDownloadInfo("air.WatchESPN");
+var argv = require('minimist')(process.argv.slice(2));
+var pkg = argv._[0] || argv.p || "com.MediaConverter";
+var vc = argv._[1] || argv.v;
+downloadToFile(pkg, vc);
 

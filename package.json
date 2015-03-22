@@ -26,17 +26,18 @@
     "test": "mocha"
   },
   "dependencies": {
-    "json-stable-stringify": "~1.0.0",
     "bluebird": "~2.3.6",
+    "json-stable-stringify": "~1.0.0",
     "lodash": "~2.4.1",
-    "protobuf": "git+https://github.com/dweinstein/protobuf.git#lossy-int64-conversions",
-    "request-debug": "~0.1.1",
-    "request": "~2.47.0"
+    "protobufjs": "^3.8.2",
+    "request": "~2.47.0",
+    "request-debug": "~0.1.1"
   },
   "devDependencies": {
     "chai": "^1.9.1",
     "chai-as-promised": "^4.1.1",
     "lodash": "^2.4.1",
+    "minimist": "^1.1.1",
     "mocha": "^1.21.4",
     "sinon": "^1.10.3",
     "sinon-as-promised": "^1.1.0",
