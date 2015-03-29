@@ -1,3 +1,9 @@
+[![NPM](https://nodei.co/npm/node-googleplay-api.png)](https://nodei.co/npm/node-googleplay-api/)
+
+[![Build Status](https://travis-ci.org/dweinstein/node-google-play.png)](https://travis-ci.org/dweinstein/node-google-play)
+[![npm version](https://badge.fury.io/js/node-googleplay-api.svg)](http://badge.fury.io/js/node-googleplay-api)
+
+
 # Usage
 ```
   var api = require('node-google-play').GooglePlayAPI(
