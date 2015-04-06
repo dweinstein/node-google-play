@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "start": "node server.js",
-    "test": "node test/*.test.js"
+    "test": "tape test/*.test.js"
   },
   "dependencies": {
     "bluebird": "~2.3.6",
