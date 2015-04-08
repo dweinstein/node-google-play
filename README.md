@@ -6,7 +6,7 @@
 
 # Usage
 ```
-  var api = require('node-google-play').GooglePlayAPI(
+  var api = require('node-googleplay-api').GooglePlayAPI(
     process.env.GOOGLE_LOGIN, process.env.GOOGLE_PASSWORD,
     process.env.ANDROID_ID
   );
