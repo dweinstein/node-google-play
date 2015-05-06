@@ -19,5 +19,6 @@ function getBulkDetails(pkgs) {
   });
 }
 
-getBulkDetails(['com.viber.voip', 'air.WatchESPN']);
+var argv = require('minimist')(process.argv.slice(2));
+getBulkDetails(argv._ || ['com.viber.voip', 'air.WatchESPN']);
 
