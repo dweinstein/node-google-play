@@ -35,6 +35,8 @@ function getDeliveryDataVc(pkg, vc) {
   });
 }
 
-//getDeliveryData("air.WatchESPN");
-getDeliveryDataVc("com.MediaConverter", 6);
+
+var argv = require('minimist')(process.argv.slice(2));
+var pkg = argv._[0] || argv.p || "com.viber.voip";
+getDeliveryData(pkg);
 
