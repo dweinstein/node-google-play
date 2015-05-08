@@ -35,10 +35,10 @@ var vc = argv._[1] || argv.v;
 return api.details(pkg)
 .then(function (res) {
   vc = vc || res.details.appDetails.versionCode;
-  return getDeliveryDataVc(pkg, vc)
-  .then(function (res) {
-    console.log('%j', [pkg, vc, res]);
-  });
+    return getDeliveryDataVc(pkg, vc)
+    .then(function (res) {
+      console.log('%j', [pkg, vc, res]);
+    });
 });
 
 
