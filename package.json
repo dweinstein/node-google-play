@@ -26,7 +26,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "tape test/*.test.js",
-    "postinstall": "scripts/get_latest_proto.js"
+    "postinstall": "node scripts/get_latest_proto.js"
   },
   "dependencies": {
     "bluebird": "~2.3.6",
