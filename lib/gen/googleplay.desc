@@ -1,2252 +1,0 @@
-
-ôÕ
-googleplay.proto"
-AckNotificationResponse"ã
-AndroidAppDeliveryData
-downloadSize (
-	signature (	
-downloadUrl (	(
-additionalFile (2.AppFileMetadata'
-downloadAuthCookie (2.HttpCookie
-forwardLocked (
-refundTimeout (
-serverInitiated (%
-postInstallRefundWindowMillis	 (
-immediateStartNeeded
- ('
-	patchData (2.AndroidAppPatchData+
-encryptionParams (2.EncryptionParams"Ö
-AndroidAppPatchData
-baseVersionCode (
-baseSignature (	
-downloadUrl (	
-patchFormat (
-maxPatchSize ("[
-AppFileMetadata
-fileType (
-versionCode (
-size (
-downloadUrl (	"K
-EncryptionParams
-version (
-encryptionKey (	
-hmacKey (	")
-
-HttpCookie
-name (	
-value (	"∑
-Address
-name (	
-addressLine1 (	
-addressLine2 (	
-city (	
-state (	
-
-postalCode (	
-postalCountry (	
-dependentLocality (	
-sortingCode	 (	
-languageCode
- (	
-phoneNumber (	
-deprecatedIsReduced (
-	firstName (	
-lastName (	
-email (	"J
-
-BookAuthor
-name (	
-deprecatedQuery (	
-docid (2.Docid"ê
-BookDetails
-subject (2.BookSubject
-	publisher (	
-publicationDate (	
-isbn (	
-numberOfPages (
-subtitle (	
-author	 (2.BookAuthor
-	readerUrl
- (	
-downloadEpubUrl (	
-downloadPdfUrl (	
-acsEpubTokenUrl (	
-acsPdfTokenUrl (	
-epubAvailable (
-pdfAvailable (
-aboutTheAuthor (	+
-
-identifier (
-2.BookDetails.Identifier
-fixedLayoutContent (
-audioVideoContent (
-isAgencyBook (.
-
-Identifier
-type (
-
-identifier (	"=
-BookSubject
-name (	
-query (	
-	subjectId (	"E
-
-BrowseLink
-name (	
-dataUrl (	
-serverLogsCookie ("∞
-BrowseResponse
-contentsUrl (	
-promoUrl (	
-category (2.BrowseLink
-
-breadcrumb (2.BrowseLink
-	quickLink (2
-.QuickLink
-serverLogsCookie ("ß
-	QuickLink
-name (	
-image (2.Image
-link (2.ResolvedLink
-displayRequired (
-serverLogsCookie (
-	backendId (
-
-prismStyle ("Í	
-BuyResponse7
-purchaseResponse (2.PurchaseNotificationResponse/
-checkoutinfo (
-2.BuyResponse.CheckoutInfo
-continueViaUrl (	
-purchaseStatusUrl	 (	
-checkoutServiceId (	
-checkoutTokenRequired (
-baseCheckoutUrl (	
-tosCheckboxHtml% (	
-permissionError& (7
-purchaseStatusResponse' (2.PurchaseStatusResponse
-purchaseCookie. (	
-	challenge1 (2
-.Challenge
-addInstrumentPromptHtml2 (	
-confirmButtonText3 (	 
-permissionErrorTitleText4 (	"
-permissionErrorMessageText5 (	
-serverLogsCookie6 (¨
-CheckoutInfo
-item (2	.LineItem
-subItem (2	.LineItem@
-checkoutoption (
-2(.BuyResponse.CheckoutInfo.CheckoutOption
-deprecatedCheckoutUrl
- (	
-addInstrumentUrl (	
-
-footerHtml (	 
-eligibleInstrumentFamily (
-footnoteHtml$ (	'
-eligibleInstrument, (2.Instrumentˆ
-CheckoutOption
-formOfPayment (	
-encodedAdjustedCart (	
-instrumentId (	
-item (2	.LineItem
-subItem (2	.LineItem
-total (2	.LineItem
-
-footerHtml (	
-instrumentFamily (
-selectedInstrument  (
-summary! (2	.LineItem
-footnoteHtml# (	
-
-instrument+ (2.Instrument
-purchaseCookie- (	
-disabledReason0 (	"\
-LineItem
-name (	
-description (	
-offer (2.Offer
-amount (2.Money"F
-Money
-micros (
-currencyCode (	
-formattedAmount (	"Ä
-PurchaseNotificationResponse
-status (
-	debugInfo (2
-.DebugInfo
-localizedErrorMessage (	
-
-purchaseId (	"˘
-PurchaseStatusResponse
-status (
-	statusMsg (	
-statusTitle (	
-briefMessage (	
-infoUrl (	%
-libraryUpdate (2.LibraryUpdate'
-rejectedInstrument (2.Instrument0
-appDeliveryData (2.AndroidAppDeliveryData"j
-BillingProfileResponse
-result ('
-billingProfile (2.BillingProfile
-userMessageHtml (	"¢
-CheckInstrumentResponse
-userHasValidInstrument (
-checkoutTokenRequired (
-
-instrument (2.Instrument'
-eligibleInstrument (2.Instrument"e
-InstrumentSetupInfoResponse'
-	setupInfo (2.InstrumentSetupInfo
-checkoutTokenRequired ("
-RedeemGiftCardRequest
-giftCardPin (	
-address (2.Address
-acceptedLegalDocumentId (	
-checkoutToken (	"¢
-RedeemGiftCardResponse
-result (
-userMessageHtml (	
-balanceHtml (	+
-addressChallenge (2.AddressChallenge
-checkoutTokenRequired ("Q
-UpdateInstrumentRequest
-
-instrument (2.Instrument
-checkoutToken (	"‘
-UpdateInstrumentResponse
-result (
-instrumentId (	
-userMessageHtml (	.
-errorInputField (2.InputValidationError
-checkoutTokenRequired (*
-redeemedOffer (2.RedeemedPromoOffer"0
-InitiateAssociationResponse
-	userToken (	"ã
-VerifyAssociationResponse
-status ( 
-billingAddress (2.Address
-
-carrierTos (2.CarrierTos
-carrierErrorMessage (	"≥
-AddressChallenge
-responseAddressParam (	
-responseCheckboxesParam (	
-title (	
-descriptionHtml (	
-checkbox (2.FormCheckbox
-address (2.Address.
-errorInputField (2.InputValidationError
-	errorHtml (	
-requiredField	 ("
-supportedCountry
- (2.Country"¶
-AuthenticationChallenge
-authenticationType ('
-responseAuthenticationTypeParam (	
-responseRetryCountParam (	
-gaiaHeaderText (	
-gaiaDescriptionTextHtml (	
-gaiaFooterTextHtml (	)
-gaiaOptOutCheckbox	 (2.FormCheckbox%
-gaiaOptOutDescriptionTextHtml
- (	"†
-	Challenge+
-addressChallenge (2.AddressChallenge9
-authenticationChallenge (2.AuthenticationChallenge+
-webViewChallenge (2.WebViewChallenge"2
-Country
-
-regionCode (	
-displayName (	"R
-FormCheckbox
-description (	
-checked (
-required (
-
-id (	"@
-InputValidationError
-
-inputField (
-errorMessage (	"ß
-WebViewChallenge
-startUrl (	
-targetUrlRegexp (	 
-cancelButtonDisplayLabel (	
-responseTargetUrlParam (	
-cancelUrlRegexp (	
-title (	"Ã
-AddCreditCardPromoOffer
-
-headerText (	
-descriptionHtml (	
-image (2.Image
-introductoryTextHtml (	
-
-offerTitle (	
-noActionDescription (	
-termsAndConditionsHtml (	"K
-AvailablePromoOffer4
-addCreditCardOffer (2.AddCreditCardPromoOffer"í
-CheckPromoOfferResponse,
-availableOffer (2.AvailablePromoOffer*
-redeemedOffer (2.RedeemedPromoOffer
-checkoutTokenRequired ("X
-RedeemedPromoOffer
-
-headerText (	
-descriptionHtml (	
-image (2.Image"e
-ActiveExperiments 
-clientAlteringExperiment (	
-otherExperiment (	
-gwsExperiment ("Î
-AndroidClientInfo
-	androidId (
-	loggingId (	
-
-sdkVersion (
-model (	
-product (	
-osBuild (	
-applicationBuild (	
-hardware (	
-device	 (	
-mccMnc
- (	
-locale (	
-country (	"•
-
-ClientInfo
-
-clientType (-
-androidClientInfo (2.AndroidClientInfo-
-desktopClientInfo (2.DesktopClientInfo%
-iosClientInfo (2.IosClientInfo"ç
-DesktopClientInfo
-clientId (	
-	loggingId (	
-
-os (	
-osMajorVersion (	
-osFullVersion (	
-applicationBuild (	"
-ExperimentIdList
-
-id (	"}
-IosClientInfo
-clientId (	
-	loggingId (	
-osMajorVersion (	
-osFullVersion (	
-applicationBuild (	"¨
-LogEvent
-eventTimeMs (
-tag (	!
-value (2.LogEventKeyValues!
-store (2.PlayStoreLogEvent
-sourceExtension (
-exp (2.ActiveExperiments"/
-LogEventKeyValues
-key (	
-value (	"ë
-
-LogRequest
-
-clientInfo (2.ClientInfo
-	logSource (
-logEvent (2	.LogEvent
-requestTimeMs (
-serializedLogEvents ("T
-LogResponse
-nextRequestWaitMillis (&
-experiments (2.ExperimentIdList"<
-Docid
-backendDocid (	
-type (
-backend (">
-Install
-	androidId (
-version (
-bundled ("ó
-Offer
-micros (
-currencyCode (	
-formattedAmount (	
-convertedPrice (2.Offer
-checkoutFlowRequired (
-fullPriceMicros (
-formattedFullAmount (	
-	offerType (!
-rentalTerms	 (2.RentalTerms
-
-onSaleDate
- (
-promotionLabel (	-
-subscriptionTerms (2.SubscriptionTerms
-formattedName (	
-formattedDescription (	
-preorder (+
-#onSaleDateDisplayTimeZoneOffsetMsec (
-licensedOfferType (;
-subscriptionContentTerms (2.SubscriptionContentTerms"£
-RentalTerms$
-dEPRECATEDGrantPeriodSeconds ('
-dEPRECATEDActivatePeriodSeconds ( 
-grantPeriod (2.TimePeriod#
-activatePeriod (2.TimePeriod"3
-
-SignedData
-
-signedData (	
-	signature (	"@
-SubscriptionContentTerms$
-requiredSubscription (2.Docid"[
-SubscriptionTerms$
-recurringPeriod (2.TimePeriod 
-trialPeriod (2.TimePeriod")
-
-TimePeriod
-unit (
-count ("G
-BillingAddressSpec
-billingAddressType (
-requiredField ("å
-BillingProfile
-
-instrument (2.Instrument$
-selectedExternalInstrumentId (	3
-billingProfileOption (2.BillingProfileOption"¿
-BillingProfileOption
-type (
-displayTitle (	
-externalInstrumentId (	
-	topupInfo (2
-.TopupInfoG
-carrierBillingInstrumentStatus (2.CarrierBillingInstrumentStatus">
-CarrierBillingCredentials
-value (	
-
-expiration ("©
-CarrierBillingInstrument
-instrumentKey (	
-accountType (	
-currencyCode (	
-transactionLimit (
-subscriberIdentifier (	9
-encryptedSubscriberInfo (2.EncryptedSubscriberInfo/
-credentials (2.CarrierBillingCredentials'
-acceptedCarrierTos (2.CarrierTos"ú
-CarrierBillingInstrumentStatus
-
-carrierTos (2.CarrierTos
-associationRequired (
-passwordRequired (.
-carrierPasswordPrompt (2.PasswordPrompt
-
-apiVersion (
-name (	-
-deviceAssociation (2.DeviceAssociation!
-carrierSupportPhoneNumber (	"é
-
-CarrierTos 
-dcbTos (2.CarrierTosEntry 
-piiTos (2.CarrierTosEntry
-needsDcbTosAcceptance (
-needsPiiTosAcceptance ("/
-CarrierTosEntry
-url (	
-version (	"¢
-CreditCardInstrument
-type (
-escrowHandle (	
-
-lastDigits (	
-expirationMonth (
-expirationYear (!
-escrowEfeParam (2	.EfeParam"U
-DeviceAssociation
-userTokenRequestMessage (	
-userTokenRequestAddress (	"Y
-DisabledInfo
-disabledReason (
-disabledMessageHtml (	
-errorMessage (	"&
-EfeParam
-key (
-value (	"÷
-
-Instrument
-externalInstrumentId (	 
-billingAddress (2.Address)
-
-creditCard (2.CreditCardInstrument1
-carrierBilling (2.CarrierBillingInstrument/
-billingAddressSpec (2.BillingAddressSpec
-instrumentFamily (=
-carrierBillingStatus (2.CarrierBillingInstrumentStatus
-displayTitle (	'
-topupInfoDeprecated	 (2
-.TopupInfo
-version
- (+
-storedValue (2.StoredValueInstrument#
-disabledInfo (2.DisabledInfo"ú
-InstrumentSetupInfo
-instrumentFamily (
-	supported (+
-addressChallenge (2.AddressChallenge
-balance (2.Money
-
-footerHtml (	";
-PasswordPrompt
-prompt (	
-forgotPasswordUrl (	"]
-StoredValueInstrument
-type (
-balance (2.Money
-	topupInfo (2
-.TopupInfo"Ö
-	TopupInfo'
-optionsContainerDocidDeprecated (	
-optionsListUrl (	
-subtitle (	%
-optionsContainerDocid (2.Docid"P
-ConsumePurchaseResponse%
-libraryUpdate (2.LibraryUpdate
-status ("π
-ContainerMetadata
-	browseUrl (	
-nextPageUrl (	
-	relevance (
-estimatedResults (
-analyticsCookie (	
-ordered (%
-containerView (2.ContainerView"[
-ContainerView
-selected (
-title (	
-listUrl (	
-serverLogsCookie ("
-FlagContentResponse"È
-ClientDownloadRequest
-url (	/
-digests (2.ClientDownloadRequest.Digests
-length (2
-	resources (2.ClientDownloadRequest.Resource7
-	signature (2$.ClientDownloadRequest.SignatureInfo
-userInitiated (
-	clientAsn (	
-fileBasename	 (	
-downloadType
- (
-locale (	/
-apkInfo (2.ClientDownloadRequest.ApkInfo
-	androidId (
-originatingPackages (	B
-originatingSignature (2$.ClientDownloadRequest.SignatureInfo3
-ApkInfo
-packageName (	
-versionCode (Ó
-CertificateChain@
-element (2/.ClientDownloadRequest.CertificateChain.Elementó
-Element
-certificate (
-parsedSuccessfully (
-subject (
-issuer (
-fingerprint (
-
-expiryTime (
-	startTime (4
-Digests
-sha256 (
-sha1 (
-md5 (I
-Resource
-url (	
-type (
-remoteIp (
-referrer (	c
-SignatureInfoA
-certificateChain (2'.ClientDownloadRequest.CertificateChain
-trusted ("ö
-ClientDownloadResponse
-verdict (2
-moreInfo (2 .ClientDownloadResponse.MoreInfo
-token (,
-MoreInfo
-description (	
-url (	"A
-ClientDownloadStatsRequest
-userDecision (
-token ("i
-	DebugInfo
-message (	!
-timing (
-2.DebugInfo.Timing(
-Timing
-name (	
-timeInMs ("R
-DebugSettingsResponse
-playCountryOverride (	
-playCountryDebugInfo (	"T
-DeliveryResponse
-status (0
-appDeliveryData (2.AndroidAppDeliveryData"'
-BulkDetailsEntry
-doc (2.DocV2"p
-BulkDetailsRequest
-docid (	
-includeChildDocs (
-includeDetails (
-sourcePackageName (	"7
-BulkDetailsResponse 
-entry (2.BulkDetailsEntry"£
-DetailsResponse
-docV1 (2.DocV1
-analyticsCookie (	
-
-userReview (2.Review
-docV2 (2.DocV2
-
-footerHtml (	
-serverLogsCookie ("µ
-DeviceConfigurationProto
-touchScreen (
-keyboard (
-
-navigation (
-screenLayout (
-hasHardKeyboard (
-hasFiveWayNavigation (
-screenDensity (
-glEsVersion (
-systemSharedLibrary	 (	
-systemAvailableFeature
- (	
-nativePlatform (	
-screenWidth (
-screenHeight (
-systemSupportedLocale (	
-glExtension (	
-deviceClass (
-maxApkDownloadSizeMb ("«
-Document
-docid (2.Docid
-
-fetchDocid (2.Docid
-sampleDocid (2.Docid
-title (	
-url (	
-snippet (	
-priceDeprecated (2.Offer#
-availability	 (2.Availability
-image
- (2.Image
-child (2	.Document)
-aggregateRating (2.AggregateRating
-offer (2.Offer*
-translatedSnippet (2.TranslatedText)
-documentVariant (2.DocumentVariant
-
-categoryId (	
-
-decoration (2	.Document
-parent (2	.Document
-privacyPolicyUrl (	
-consumptionUrl (	
-estimatedNumChildren (
-subtitle (	"æ
-DocumentVariant
-variationType (
-rule (2.Rule
-title (	
-snippet (	
-recentChanges (	(
-autoTranslation (2.TranslatedText
-offer (2.Offer
-	channelId	 (
-child
- (2	.Document
-
-decoration (2	.Document
-image (2.Image
-
-categoryId (	
-subtitle (	"È
-Image
-	imageType (#
-	dimension (
-2.Image.Dimension
-imageUrl (	
-altTextLocalized (	
-	secureUrl (	
-positionInSequence (
-supportsFifeUrlOptions	 (!
-citation
- (
-2.Image.Citation
-durationSeconds (
-fillColorRgb (	*
-	Dimension
-width (
-height (/
-Citation
-titleLocalized (	
-url (	"J
-TranslatedText
-text (	
-sourceLocale (	
-targetLocale (	"U
-Badge
-title (	
-image (2.Image
-	browseUrl (	
-description (	"M
-BadgeContainer
-title (	
-image (2.Image
-badge (2.Badge"-
-ContainerWithBanner
-colorThemeArgb (	">
-DealOfTheDay
-featuredHeader (	
-colorThemeArgb (	"1
-	Dismissal
-url (	
-descriptionHtml (	"≥
-EditorialSeriesContainer
-seriesTitle (	
-seriesSubtitle (	
-episodeTitle (	
-episodeSubtitle (	
-colorThemeArgb (	#
-videoSnippet (2.VideoSnippet"8
-Link
-uri (	#
-resolvedLink (2.ResolvedLink"D
-
-NextBanner
-title (	
-subtitle (	
-colorTextArgb (	"X
-OBSOLETE_Reason
-briefReason (	
-oBSOLETEDetailedReason (	
-uniqueId (	"l
-PlusOneData
-	setByUser (
-total (
-circlesTotal (%
-circlesProfiles (2.PlusProfile"r
-PromotedDoc
-title (	
-subtitle (	
-image (2.Image
-descriptionHtml (	
-
-detailsUrl (	"ñ
-Reason
-descriptionHtml (	/
-reasonPlusProfiles (2.ReasonPlusProfiles#
-reasonReview (2.ReasonReview
-	dismissal (2
-.Dismissal"Y
-ReasonPlusProfiles 
-localizedDescriptionHtml (	!
-plusProfile (2.PlusProfile"'
-ReasonReview
-review (2.Review"
-RecommendationsContainer"^
-SectionMetadata
-header (	
-listUrl (	
-	browseUrl (	
-descriptionHtml (	"’
-SeriesAntenna
-seriesTitle (	
-seriesSubtitle (	
-episodeTitle (	
-episodeSubtitle (	
-colorThemeArgb (	'
-sectionTracks (2.SectionMetadata'
-sectionAlbums (2.SectionMetadata"y
-SuggestionReasons
-reason (2.Reason$
-neutralDismissal (2
-.Dismissal%
-positiveDismissal (2
-.Dismissal"Ì
-Template%
-seriesAntenna (2.SeriesAntenna%
-tileGraphic2X1 (2.TileTemplate%
-tileGraphic4X2 (2.TileTemplate1
-tileGraphicColoredTitle2X1 (2.TileTemplate3
-tileGraphicUpperLeftTitle2X1 (2.TileTemplate5
-tileDetailsReflectedGraphic2X2 (2.TileTemplate'
-tileFourBlock4X2 (2.TileTemplate1
-containerWithBanner (2.ContainerWithBanner#
-dealOfTheDay	 (2.DealOfTheDay1
-tileGraphicColoredTitle4X2
- (2.TileTemplate;
-editorialSeriesContainer (2.EditorialSeriesContainer;
-recommendationsContainer (2.RecommendationsContainer
-
-nextBanner (2.NextBanner"=
-TileTemplate
-colorThemeArgb (	
-colorTextArgb (	"I
-VideoSnippet
-image (2.Image
-title (	
-description (	"#
-Warning
-localizedMessage (	"c
-AlbumDetails
-name (	
-details (2.MusicDetails%
-displayArtist (2.ArtistDetails"”
-
-AppDetails
-developerName (	
-majorVersionNumber (
-versionCode (
-versionString (	
-title (	
-appCategory (	
-contentRating (
-installationSize	 (
-oBSOLETEPermission
- (	
-developerEmail (	
-developerWebsite (	
-numDownloads (	
-packageName (	
-recentChangesHtml (	
-
-uploadDate (	
-file (2.FileMetadata
-appType (	
-certificateHash (	"
-
-permission (2.AppPermission"8
-AppPermission
-key (	
-permissionRequired ("^
-ArtistDetails
-
-detailsUrl (	
-name (	+
-externalLinks (2.ArtistExternalLinks"b
-ArtistExternalLinks
-
-websiteUrl (	
-googlePlusProfileUrl (	
-youtubeChannelUrl (	"È
-DocumentDetails
-
-appDetails (2.AppDetails#
-albumDetails (2.AlbumDetails%
-artistDetails (2.ArtistDetails!
-songDetails (2.SongDetails!
-bookDetails (2.BookDetails#
-videoDetails (2.VideoDetails1
-subscriptionDetails (2.SubscriptionDetails)
-magazineDetails (2.MagazineDetails%
-tvShowDetails	 (2.TvShowDetails)
-tvSeasonDetails
- (2.TvSeasonDetails+
-tvEpisodeDetails (2.TvEpisodeDetails!
-newsDetails (2.NewsDetails"C
-FileMetadata
-fileType (
-versionCode (
-size ("î
-MagazineDetails
-parentDetailsUrl (	)
-!deviceAvailabilityDescriptionHtml (	
-psvDescription (	$
-deliveryFrequencyDescription (	"ª
-MusicDetails
-	censoring (
-durationSec (
-originalReleaseDate (	
-label (	
-artist (2.ArtistDetails
-genre (	
-releaseDate (	
-releaseType ("?
-NewsDetails
-parentDetailsUrl (	
-psvDescription (	"µ
-SongDetails
-name (	
-details (2.MusicDetails
-	albumName (	
-trackNumber (
-
-previewUrl (	%
-displayArtist (2.ArtistDetails
-badge (2.Badge"1
-SubscriptionDetails
-subscriptionPeriod ("e
-Trailer
-	trailerId (	
-title (	
-thumbnailUrl (	
-watchUrl (	
-duration (	"W
-TvEpisodeDetails
-parentDetailsUrl (	
-episodeIndex (
-releaseDate (	"û
-TvSeasonDetails
-parentDetailsUrl (	
-seasonIndex (
-releaseDate (	
-broadcaster (	
-episodeCount (
-expectedEpisodeCount ("]
-TvShowDetails
-seasonCount (
-	startYear (
-endYear (
-broadcaster (	"?
-VideoCredit
-
-creditType (
-credit (	
-name (	"ã
-VideoDetails
-credit (2.VideoCredit
-duration (	
-releaseDate (	
-contentRating (	
-likes (
-dislikes (
-genre (	
-trailer (2.Trailer$
-
-rentalTerm	 (2.VideoRentalTerm
-audioLanguage
- (	
-captionLanguage (	"†
-VideoRentalTerm
-	offerType (
-offerAbbreviation (	
-rentalHeader (	#
-term (
-2.VideoRentalTerm.Term$
-Term
-header (	
-body (	"˘
-Bucket
-document (2.DocV1
-multiCorpus (
-title (	
-iconUrl (	
-fullContentsUrl (	
-	relevance (
-estimatedResults (
-analyticsCookie (	
-fullContentsListUrl	 (	
-nextPageUrl
- (	
-ordered ("<
-ListResponse
-bucket (2.Bucket
-doc (2.DocV2"î
-DocV1
-	finskyDoc (2	.Document
-docid (	
-
-detailsUrl (	
-
-reviewsUrl (	
-relatedListUrl (	
-moreByListUrl (	
-shareUrl (	
-creator (	!
-details	 (2.DocumentDetails
-descriptionHtml
- (	
-relatedBrowseUrl (	
-moreByBrowseUrl (	
-relatedHeader (	
-moreByHeader (	
-title (	!
-plusOneData (2.PlusOneData
-warningMessage (	"Ê
-Annotations(
-sectionRelated (2.SectionMetadata'
-sectionMoreBy (2.SectionMetadata!
-plusOneData (2.PlusOneData
-warning (2.Warning+
-sectionBodyOfWork (2.SectionMetadata,
-sectionCoreContent (2.SectionMetadata
-template (2	.Template
-badgeForCreator (2.Badge
-badgeForDoc	 (2.Badge
-link
- (2.Link*
-sectionCrossSell (2.SectionMetadata/
-sectionRelatedDocType (2.SectionMetadata!
-promotedDoc (2.PromotedDoc
-	offerNote (	
-subscription (2.DocV2(
-oBSOLETEReason (2.OBSOLETE_Reason
-privacyPolicyUrl (	-
-suggestionReasons (2.SuggestionReasons+
-optimalDeviceClassWarning (2.Warning*
-docBadgeContainer (2.BadgeContainer"À
-DocV2
-docid (	
-backendDocid (	
-docType (
-	backendId (
-title (	
-creator (	
-descriptionHtml (	
-offer (2.Offer#
-availability	 (2.Availability
-image
- (2.Image
-child (2.DocV2-
-containerMetadata (2.ContainerMetadata!
-details (2.DocumentDetails)
-aggregateRating (2.AggregateRating!
-annotations (2.Annotations
-
-detailsUrl (	
-shareUrl (	
-
-reviewsUrl (	
-
-backendUrl (	
-purchaseDetailsUrl (	
-detailsReusable (
-subtitle (	!
-translatedDescriptionHtml (	"ô
-EncryptedSubscriberInfo
-data (	
-encryptedKey (	
-	signature (	
-
-initVector (	
-googleKeyVersion (
-carrierKeyVersion ("
-Availability
-restriction (
-	offerType (
-rule (2.RuleX
- perdeviceavailabilityrestriction	 (
-2..Availability.PerDeviceAvailabilityRestriction
-availableIfOwned (
-install (2.Install)
-
-filterInfo (2.FilterEvaluationInfo%
-ownershipInfo (2.OwnershipInfo1
-availabilityProblem (2.AvailabilityProblemé
- PerDeviceAvailabilityRestriction
-	androidId
- (
-deviceRestriction (
-	channelId ()
-
-filterInfo (2.FilterEvaluationInfo"@
-AvailabilityProblem
-problemType (
-missingValue (	"?
-FilterEvaluationInfo'
-ruleEvaluation (2.RuleEvaluation"ì
-Rule
-negate (
-operator (
-key (
-	stringArg (	
-longArg (
-	doubleArg (
-subrule (2.Rule
-responseCode (
-comment	 (	
-stringArgHash
- (
-constArg (
-availabilityProblemType (
-includeMissingValues ("ç
-RuleEvaluation
-rule (2.Rule
-actualStringValue (	
-actualLongValue (
-actualBoolValue (
-actualDoubleValue ("B
-GroupLicenseInfo
-licensedOfferType (
-gaiaGroupId ("+
-LicensedDocumentInfo
-gaiaGroupId ("v
-LibraryAppDetails
-certificateHash (	"
-refundTimeoutTimestampMsec ($
-postDeliveryRefundWindowMsec ("D
-LibraryInAppDetails
-signedPurchaseData (	
-	signature (	"ë
-LibraryMutation
-docid (2.Docid
-	offerType (
-documentHash (
-deleted (&
-
-appDetails (2.LibraryAppDetails8
-subscriptionDetails (2.LibrarySubscriptionDetails*
-inAppDetails (2.LibraryInAppDetails
-validUntilTimestampMsec ("Œ
-LibrarySubscriptionDetails
-initiationTimestampMsec ()
-!deprecatedValidUntilTimestampMsec (
-autoRenewing (
-trialUntilTimestampMsec (
-signedPurchaseData (	
-	signature (	"å
-LibraryUpdate
-status (
-corpus (
-serverToken ("
-mutation (2.LibraryMutation
-hasMore (
-	libraryId (	"v
-ClientLibraryState
-corpus (
-serverToken (
-hashCodeSum (
-librarySize (
-	libraryId (	"F
-LibraryReplicationRequest)
-libraryState (2.ClientLibraryState"<
-LibraryReplicationResponse
-update (2.LibraryUpdate"l
-ClickLogEvent
-	eventTime (
-url (	
-listId (	
-referrerUrl (	
-referrerListId (	"p
-ModifyLibraryRequest
-	libraryId (	
-forAddDocid (	
-forRemovalDocid (	
-forArchiveDocid (	">
-ModifyLibraryResponse%
-libraryUpdate (2.LibraryUpdate"B
-AndroidAppNotificationData
-versionCode (
-assetId (	"M
-InAppNotificationData
-checkoutOrderId (	
-inAppNotificationId (	"6
-LibraryDirtyData
-backend (
-	libraryId (	"ó
-Notification
-notificationType (
-	timestamp (
-docid (2.Docid
-docTitle (	
-	userEmail (	,
-appData (2.AndroidAppNotificationData0
-appDeliveryData (2.AndroidAppDeliveryData1
-purchaseRemovalData	 (2.PurchaseRemovalData3
-userNotificationData
- (2.UserNotificationData5
-inAppNotificationData (2.InAppNotificationData3
-purchaseDeclinedData (2.PurchaseDeclinedData
-notificationId (	%
-libraryUpdate (2.LibraryUpdate+
-libraryDirtyData (2.LibraryDirtyData"@
-PurchaseDeclinedData
-reason (
-showNotification ("(
-PurchaseRemovalData
-	malicious ("à
-UserNotificationData
-notificationTitle (	
-notificationText (	
-
-tickerText (	
-dialogTitle (	
-
-dialogText (	"ò
-OwnershipInfo
-initiationTimestampMsec (
-validUntilTimestampMsec (
-autoRenewing ("
-refundTimeoutTimestampMsec ($
-postDeliveryRefundWindowMsec (*
-developerPurchaseInfo (2.SignedData
-
-preordered (
-hidden (!
-rentalTerms	 (2.RentalTerms+
-groupLicenseInfo
- (2.GroupLicenseInfo3
-licensedDocumentInfo (2.LicensedDocumentInfo
-quantity ("A
-AppData
-version (
-
-oldVersion (
-	systemApp ("»
-PlayStoreBackgroundActionEvent
-type (
-document (	
-reason (	
-	errorCode (
-exceptionType (	
-serverLogsCookie (
-	offerType (
-fromSetting (
-	toSetting	 (*
-sessionInfo
- (2.PlayStoreSessionData
-appData (2.AppData
-serverLatencyMs (
-clientLatencyMs ("?
-PlayStoreClickEvent(
-elementPath (2.PlayStoreUiElement"C
-PlayStoreDeepLinkEvent
-externalUrl (	
-resolvedType ("t
-PlayStoreImpressionEvent!
-tree (2.PlayStoreUiElement)
-referrerPath (2.PlayStoreUiElement
-
-id ("Ù
-PlayStoreLogEvent-
-
-impression (2.PlayStoreImpressionEvent#
-click (2.PlayStoreClickEvent9
-backgroundAction (2.PlayStoreBackgroundActionEvent%
-search (2.PlayStoreSearchEvent)
-deepLink (2.PlayStoreDeepLinkEvent"L
-PlayStoreSearchEvent
-query (	
-queryUrl (	
-referrerUrl (	"ô
-PlayStoreSessionData
-globalAutoUpdateEnabled ($
-globalAutoUpdateOverWifiOnly (,
-$autoUpdateCleanupDialogNumTimesShown (
-networkType (
-networkSubType (
-numAccountsOnDevice (
-numInstalledApps ($
-numAutoUpdatingInstalledApps ('
-numInstalledAppsNotAutoUpdating	 ( 
-gaiaPasswordAuthOptedOut
- (
-contentFilterLevel (
-allowUnknownSources ("ì
-PlayStoreUiElement
-type (
-serverLogsCookie (1
-clientLogsCookie (2.PlayStoreUiElementInfo"
-child (2.PlayStoreUiElement"¨
-PlayStoreUiElementInfo>
-instrumentInfo (2&.PlayStoreUiElementInfo.InstrumentInfo
-serialDocid (	=
-InstrumentInfo
-instrumentFamily (
-	isDefault ("Y
-PlusProfile
-displayName (	
-profileImageUrl (	
-profileImage (2.Image"
-PlusOneResponse"8
-PlusProfileResponse!
-plusProfile (2.PlusProfile"Ø
-
-ClientCart
-title (	
-formattedPrice (	
-purchaseContextToken (	
-
-instrument (2.Instrument
-extendedDetailHtml (	
-
-footerHtml (	
-addInstrumentPromptHtml (	
-
-buttonText (	-
-completePurchaseChallenge	 (2
-.Challenge
-priceByline
- (	
-
-detailHtml (	"”
-CommitPurchaseResponse'
-purchaseStatus (2.PurchaseStatus
-	challenge (2
-.Challenge%
-libraryUpdate (2.LibraryUpdate0
-appDeliveryData (2.AndroidAppDeliveryData
-serverLogsCookie ("Ω
-PreparePurchaseResponse'
-purchaseStatus (2.PurchaseStatus
-	challenge (2
-.Challenge
-cart (2.ClientCart%
-libraryUpdate (2.LibraryUpdate
-serverLogsCookie ("W
-PurchaseStatus
-
-statusCode (
-errorMessageHtml (	
-permissionError ("
-RateSuggestedContentResponse"ß
-AggregateRating
-type (
-
-starRating (
-ratingsCount (
-oneStarRatings (
-twoStarRatings (
-threeStarRatings (
-fourStarRatings (
-fiveStarRatings (
-thumbsUpCount	 (
-thumbsDownCount
- (
-commentCount (
-bayesianMeanRating ("c
-DirectPurchase
-
-detailsUrl (	
-purchaseDocid (	
-parentDocid (	
-	offerType ("
-RedeemGiftCard"´
-ResolvedLink
-
-detailsUrl (	
-	browseUrl (	
-	searchUrl (	'
-directPurchase (2.DirectPurchase
-homeUrl (	'
-redeemGiftCard (2.RedeemGiftCard"Ù
-Payload#
-listResponse (2.ListResponse)
-detailsResponse (2.DetailsResponse'
-reviewResponse (2.ReviewResponse!
-buyResponse (2.BuyResponse'
-searchResponse (2.SearchResponse!
-tocResponse (2.TocResponse'
-browseResponse (2.BrowseResponse7
-purchaseStatusResponse (2.PurchaseStatusResponse;
-updateInstrumentResponse	 (2.UpdateInstrumentResponse!
-logResponse
- (2.LogResponse9
-checkInstrumentResponse (2.CheckInstrumentResponse)
-plusOneResponse (2.PlusOneResponse1
-flagContentResponse (2.FlagContentResponse9
-ackNotificationResponse (2.AckNotificationResponseA
-initiateAssociationResponse (2.InitiateAssociationResponse=
-verifyAssociationResponse (2.VerifyAssociationResponse?
-libraryReplicationResponse (2.LibraryReplicationResponse'
-revokeResponse (2.RevokeResponse1
-bulkDetailsResponse (2.BulkDetailsResponse*
-resolveLinkResponse (2.ResolvedLink+
-deliveryResponse (2.DeliveryResponse-
-acceptTosResponse (2.AcceptTosResponseC
-rateSuggestedContentResponse (2.RateSuggestedContentResponse9
-checkPromoOfferResponse (2.CheckPromoOfferResponseA
-instrumentSetupInfoResponse (2.InstrumentSetupInfoResponse7
-redeemGiftCardResponse (2.RedeemGiftCardResponse5
-modifyLibraryResponse (2.ModifyLibraryResponse?
-uploadDeviceConfigResponse (2.UploadDeviceConfigResponse1
-plusProfileResponse (2.PlusProfileResponse9
-consumePurchaseResponse (2.ConsumePurchaseResponse7
-billingProfileResponse (2.BillingProfileResponse9
-preparePurchaseResponse  (2.PreparePurchaseResponse7
-commitPurchaseResponse! (2.CommitPurchaseResponse5
-debugSettingsResponse" (2.DebugSettingsResponse"U
-PreFetch
-url (	
-response (
-etag (	
-ttl (
-softTtl ("∫
-ResponseWrapper
-payload (2.Payload!
-commands (2.ServerCommands
-preFetch (2	.PreFetch#
-notification (2.Notification'
-serverMetadata (2.ServerMetadata"]
-ServerCommands
-
-clearCache (
-displayErrorMessage (	
-logErrorStacktrace (	"'
-ServerMetadata
-latencyMillis ("D
-GetReviewsResponse
-review (2.Review
-matchingCount ("ñ
-Review
-
-authorName (	
-url (	
-source (	
-documentVersion (	
-timestampMsec (
-
-starRating (
-title (	
-comment (	
-	commentId	 (	
-
-deviceName (	
-	replyText (	
-replyTimestampMsec (!
-plusProfile (2.PlusProfile"o
-ReviewResponse(
-getResponse (2.GetReviewsResponse
-nextPageUrl (	
-updatedReview (2.Review"7
-RevokeResponse%
-libraryUpdate (2.LibraryUpdate"g
-RelatedSearch
-	searchUrl (	
-header (	
-	backendId (
-docType (
-current ("∆
-SearchResponse
-originalQuery (	
-suggestedQuery (	
-aggregateQuery (
-bucket (2.Bucket
-doc (2.DocV2%
-relatedSearch (2.RelatedSearch
-serverLogsCookie ("^
-BillingConfig3
-carrierBillingConfig (2.CarrierBillingConfig
-maxIabApiVersion ("È
-CarrierBillingConfig
-
-id (	
-name (	
-
-apiVersion (
-provisioningUrl (	
-credentialsUrl (	
-tosRequired ()
-!perTransactionCredentialsRequired (2
-*sendSubscriberIdWithCarrierBillingRequests ("o
-CorpusMetadata
-backend (
-name (	
-
-landingUrl (	
-libraryName (	
-recsWidgetUrl (	"#
-Experiments
-experimentId (	"3
-SelfUpdateConfig
-latestClientVersionCode ("õ
-TocResponse
-corpus (2.CorpusMetadata
-tosVersionDeprecated (
-
-tosContent (	
-homeUrl (	!
-experiments (2.Experiments&
-tosCheckboxTextMarketingEmails (	
-tosToken (	#
-userSettings (2.UserSettings
-iconOverrideUrl	 (	+
-selfUpdateConfig
- (2.SelfUpdateConfig"
-requiresUploadDeviceConfig (%
-billingConfig (2.BillingConfig
-recsWidgetUrl (	"9
-UserSettings)
-!tosCheckboxMarketingEmailsOptedIn ("
-AcceptTosResponse"Ñ
-UploadDeviceConfigRequest6
-deviceConfiguration (2.DeviceConfigurationProto
-manufacturer (	
-gcmRegistrationId (	"=
-UploadDeviceConfigResponse
-uploadDeviceConfigToken (	"~
-AckNotificationsRequestProto
-notificationId (	*
-signatureHash (2.SignatureHashProto
-nackNotificationId (	"
-AckNotificationsResponseProto"ü
-AddressProto
-address1 (	
-address2 (	
-city (	
-state (	
-
-postalCode (	
-country (	
-name (	
-type (	
-phone	 (	"*
-AppDataProto
-key (	
-value (	"<
-AppSuggestionProto&
-	assetInfo (2.ExternalAssetProto"Q
-AssetIdentifierProto
-packageName (	
-versionCode (
-assetId (	"å
-AssetsRequestProto
-	assetType (
-query (	
-
-categoryId (	
-assetId (	
-retrieveVendingHistory (
-retrieveExtendedInfo (
-	sortOrder (
-
-startIndex (
-
-numEntries	 (
-
-viewFilter
- (
-rankingType (	
-retrieveCarrierChannel (
-pendingDownloadAssetId (	!
-reconstructVendingHistory (
-unfilteredResults (
-badgeId (	"–
-AssetsResponseProto"
-asset (2.ExternalAssetProto
-numTotalEntries (
-correctedQuery (	%
-altAsset (2.ExternalAssetProto
-numCorrectedEntries (
-header (	
-listType ("ª
-BillingEventRequestProto
-	eventType (
-billingParametersId (	
-resultSuccess (
-clientMessage (	A
-carrierInstrument (2&.ExternalCarrierBillingInstrumentProto"
-BillingEventResponseProto"º
-BillingParameterProto
-
-id (	
-name (	
-mncMcc (	
-
-backendUrl (	
-iconId (	
-billingInstrumentType (
-applicationId (	
-tosUrl (	
-instrumentTosRequired	 (
-
-apiVersion
- ()
-!perTransactionCredentialsRequired (2
-*sendSubscriberIdWithCarrierBillingRequests (
-deviceAssociationMethod (
-userTokenRequestMessage (	
-userTokenRequestAddress (	
-passphraseRequired ("Q
-CarrierBillingCredentialsProto
-credentials (	
-credentialsTimeout ("ˇ
-CategoryProto
-	assetType (
-
-categoryId (	
-categoryDisplay (	
-categorySubtitle (	
-promotedAssetsNew (	
-promotedAssetsHome (	%
-subCategories (2.CategoryProto
-promotedAssetsPaid	 (	
-promotedAssetsFree
- (	":
-!CheckForNotificationsRequestProto
-alarmDuration ("$
-"CheckForNotificationsResponseProto"S
-CheckLicenseRequestProto
-packageName (	
-versionCode (
-nonce ("X
-CheckLicenseResponseProto
-responseCode (
-
-signedData (	
-	signature (	"á
-CommentsRequestProto
-assetId (	
-
-startIndex (
-
-numEntries (
-shouldReturnSelfComment (
-assetReferrer (	"Ñ
-CommentsResponseProto&
-comment (2.ExternalCommentProto
-numTotalEntries (*
-selfComment (2.ExternalCommentProto"¿
-ContentSyncRequestProto
-incremental (E
-assetinstallstate (
-2*.ContentSyncRequestProto.AssetInstallState5
-	systemapp
- (
-2".ContentSyncRequestProto.SystemApp
-sideloadedAppCount (•
-AssetInstallState
-assetId (	
-
-assetState (
-installTime (
-uninstallTime (
-packageName (	
-versionCode (
-assetReferrer	 (	N
-	SystemApp
-packageName (	
-versionCode (
-certificateHash (	"7
-ContentSyncResponseProto
-numUpdatesAvailable ("D
-DataMessageProto
-category (	
-appData (2.AppDataProto"P
-DownloadInfoProto
-apkSize (*
-additionalFile (2.FileMetadataProto"Ê
-
-ExternalAssetProto
-
-id (	
-title (	
-	assetType (
-owner (	
-version (	
-price (	
-averageRating (	
-
-numRatings (D
-purchaseinformation	 (
-2'.ExternalAssetProto.PurchaseInformation6
-extendedinfo (
-2 .ExternalAssetProto.ExtendedInfo
-ownerId (	
-packageName (	
-versionCode (
-bundledAsset (
-priceCurrency  (	
-priceMicros! (
-filterReason# (	
-actualSellerPrice( (	%
-appBadge/ (2.ExternalBadgeProto'
-
-ownerBadge0 (2.ExternalBadgeProto
-PurchaseInformation
-purchaseTime
- (
-refundTimeoutTime (
-refundStartPolicy- (
-refundWindowDuration. ( 
-ExtendedInfo
-description (	
-downloadCount (
-applicationPermissionId (	 
-requiredInstallationSize (
-packageName (	
-category (	
-forwardLocked (
-contactEmail (	
-everInstalledByUser (
-downloadCountString (	
-contactPhone (	
-contactWebsite (	
-nextPurchaseRefundable (
-numScreenshots (
-promotionalDescription (	
-serverAssetState" (
-contentRatingLevel$ (
-contentRatingString% (	
-recentChanges& (	M
-packagedependency' (
-22.ExternalAssetProto.ExtendedInfo.PackageDependency
-	videoLink+ (	(
-downloadInfo1 (2.DownloadInfoProtoA
-PackageDependency
-packageName) (	
-skipPermissions* ("5
-ExternalBadgeImageProto
-usage (
-url (	"ä
-ExternalBadgeProto
-localizedTitle (	
-localizedDescription (	,
-
-badgeImage (2.ExternalBadgeImageProto
-searchId (	"‡
-%ExternalCarrierBillingInstrumentProto
-instrumentKey (	
-subscriberIdentifier (	
-accountType (	
-subscriberCurrency (	
-transactionLimit (
-subscriberName (	
-address1 (	
-address2 (	
-city	 (	
-state
- (	
-
-postalCode (	
-country (	9
-encryptedSubscriberInfo (2.EncryptedSubscriberInfo"r
-ExternalCommentProto
-body (	
-rating (
-creatorName (	
-creationTime (
-	creatorId (	"˚
-ExternalCreditCard
-type (	
-
-lastDigits (	
-expYear (
-expMonth (
-
-personName (	
-countryCode (	
-
-postalCode (	
-makeDefault (
-address1	 (	
-address2
- (	
-city (	
-state (	
-phone (	"µ
-ExternalPaypalInstrumentProto
-instrumentKey (	
-preapprovalKey (	
-paypalEmail (	$
-paypalAddress (2.AddressProto*
-"multiplePaypalInstrumentsSupported ("]
-FileMetadataProto
-fileType (
-versionCode (
-size (
-downloadUrl (	"Z
-GetAddressSnippetRequestProto9
-encryptedSubscriberInfo (2.EncryptedSubscriberInfo"8
-GetAddressSnippetResponseProto
-addressSnippet (	"B
-GetAssetRequestProto
-assetId (	
-directDownloadKey (	"⁄
-GetAssetResponseProto9
-installasset (
-2#.GetAssetResponseProto.InstallAsset*
-additionalFile (2.FileMetadataProtoŸ
-InstallAsset
-assetId (	
-	assetName (	
-	assetType (	
-assetPackage (	
-blobUrl (	
-assetSignature (	
-	assetSize (
-refundTimeoutMillis	 (
-forwardLocked
- (
-secured (
-versionCode (
-downloadAuthCookieName (	
-downloadAuthCookieValue (	%
-postInstallRefundWindowMillis ("
-GetCarrierInfoRequestProto"∏
-GetCarrierInfoResponseProto
-carrierChannelEnabled (
-carrierLogoIcon (
-carrierBanner (
-carrierSubtitle (	
-carrierTitle (	
-carrierImageDensity ("6
-GetCategoriesRequestProto
-prefetchPromoData ("@
-GetCategoriesResponseProto"
-
-categories (2.CategoryProto"ª
-GetImageRequestProto
-assetId (	
-
-imageUsage (
-imageId (	
-screenPropertyWidth (
-screenPropertyHeight (
-screenPropertyDensity (
-productType ("@
-GetImageResponseProto
-	imageData (
-imageDensity ("Ù
-GetMarketMetadataRequestProto
-lastRequestTime (6
-deviceConfiguration (2.DeviceConfigurationProto
-deviceRoaming (
-marketSignatureHash (	
-contentRating (
-deviceModelName (	
-deviceManufacturerName (	"∑
-GetMarketMetadataResponseProto
-latestClientVersionCode (
-latestClientUrl (	
-paidAppsEnabled (0
-billingParameter (2.BillingParameterProto
-commentPostEnabled (
-billingEventsEnabled (
-warningMessage (	
-inAppBillingEnabled (!
-inAppBillingMaxApiVersion	 ("1
-GetSubCategoriesRequestProto
-	assetType ("¢
-GetSubCategoriesResponseProto?
-subcategory (
-2*.GetSubCategoriesResponseProto.SubCategory@
-SubCategory
-subCategoryDisplay (	
-subCategoryId (	"∞
-$InAppPurchaseInformationRequestProto*
-signatureHash (2.SignatureHashProto
-nonce (
-notificationId (	
-signatureAlgorithm (	
-billingApiVersion ("ª
-%InAppPurchaseInformationResponseProto(
-signedResponse (2.SignedDataProto:
-statusBarNotification (2.StatusBarNotificationProto,
-purchaseResult (2.PurchaseResultProto"ò
-$InAppRestoreTransactionsRequestProto*
-signatureHash (2.SignatureHashProto
-nonce (
-signatureAlgorithm (	
-billingApiVersion ("
-%InAppRestoreTransactionsResponseProto(
-signedResponse (2.SignedDataProto,
-purchaseResult (2.PurchaseResultProto"∫
-ModifyCommentRequestProto
-assetId (	&
-comment (2.ExternalCommentProto
-deleteComment (
-	flagAsset (
-flagType (
-flagMessage (	
-nonFlagFlow ("
-ModifyCommentResponseProto"v
-PaypalCountryInfoProto
-birthDateRequired (
-tosText (	
-billingAgreementText (	
-
-preTosText (	"y
-PaypalCreateAccountRequestProto
-	firstName (	
-lastName (	
-address (2.AddressProto
-	birthDate (	"<
- PaypalCreateAccountResponseProto
-createAccountKey (	"E
-PaypalCredentialsProto
-preapprovalKey (	
-paypalEmail (	"B
- PaypalMassageAddressRequestProto
-address (2.AddressProto"C
-!PaypalMassageAddressResponseProto
-address (2.AddressProto"^
-(PaypalPreapprovalCredentialsRequestProto
-gaiaAuthToken (	
-billingInstrumentId (	"n
-)PaypalPreapprovalCredentialsResponseProto
-
-resultCode (
-paypalAccountKey (	
-paypalEmail (	"R
-$PaypalPreapprovalDetailsRequestProto
-
-getAddress (
-preapprovalKey (	"\
-%PaypalPreapprovalDetailsResponseProto
-paypalEmail (	
-address (2.AddressProto"
-PaypalPreapprovalRequestProto"8
-PaypalPreapprovalResponseProto
-preapprovalKey (	"]
-PendingNotificationsProto'
-notification (2.DataMessageProto
-nextCheckMillis ("e
-PrefetchedBundleProto$
-request (2.SingleRequestProto&
-response (2.SingleResponseProto"º
-PurchaseCartInfoProto
-	itemPrice (	
-taxInclusive (	
-taxExclusive (	
-total (	
-
-taxMessage (	
-footerMessage (	
-priceCurrency (	
-priceMicros ("ì
-PurchaseInfoProto
-transactionId (	(
-cartInfo (2.PurchaseCartInfoProtoA
-billinginstruments (
-2%.PurchaseInfoProto.BillingInstruments
-errorInputFields	 (
-refundPolicy
- (	
-userCanAddGdd (
-eligibleInstrumentTypes (
-orderId (	Ä
-BillingInstrumentsR
-billinginstrument (
-27.PurchaseInfoProto.BillingInstruments.BillingInstrument"
-defaultBillingInstrumentId (	r
-BillingInstrument
-
-id (	
-name (	
-	isInvalid (
-instrumentType (
-instrumentStatus ("i
-PurchaseMetadataRequestProto*
-"deprecatedRetrieveBillingCountries (
-billingInstrumentType ("á
-PurchaseMetadataResponseProto;
-	countries (
-2(.PurchaseMetadataResponseProto.Countries®
-	CountriesA
-country (
-20.PurchaseMetadataResponseProto.Countries.Country◊
-Country
-countryCode (	
-countryName (	2
-paypalCountryInfo (2.PaypalCountryInfoProto#
-allowsReducedBillingAddress (e
-instrumentaddressspec (
-2F.PurchaseMetadataResponseProto.Countries.Country.InstrumentAddressSpecb
-InstrumentAddressSpec
-instrumentFamily (/
-billingAddressSpec	 (2.BillingAddressSpec"‚
-PurchaseOrderRequestProto
-gaiaAuthToken (	
-assetId (	
-transactionId (	
-billingInstrumentId (	
-tosAccepted (B
-carrierBillingCredentials (2.CarrierBillingCredentialsProto
-existingOrderId (	
-billingInstrumentType (
-billingParametersId	 (	2
-paypalCredentials
- (2.PaypalCredentialsProto,
-riskHeaderInfo (2.RiskHeaderInfoProto
-productType (*
-signatureHash (2.SignatureHashProto
-developerPayload (	"∂
-PurchaseOrderResponseProto
-deprecatedResultCode ((
-purchaseInfo (2.PurchaseInfoProto"
-asset (2.ExternalAssetProto,
-purchaseResult (2.PurchaseResultProto"í
-PurchasePostRequestProto
-gaiaAuthToken (	
-assetId (	
-transactionId (	N
-billinginstrumentinfo (
-2/.PurchasePostRequestProto.BillingInstrumentInfo
-tosAccepted (
-cbInstrumentKey (	
-paypalAuthConfirmed (
-productType (*
-signatureHash (2.SignatureHashProto⁄
-BillingInstrumentInfo
-billingInstrumentId (	'
-
-creditCard (2.ExternalCreditCardA
-carrierInstrument	 (2&.ExternalCarrierBillingInstrumentProto8
-paypalInstrument
- (2.ExternalPaypalInstrumentProto"™
-PurchasePostResponseProto
-deprecatedResultCode ((
-purchaseInfo (2.PurchaseInfoProto
-termsOfServiceUrl (	
-termsOfServiceText (	
-termsOfServiceName (	"
-termsOfServiceCheckboxText (	 
-termsOfServiceHeaderText (	,
-purchaseResult (2.PurchaseResultProto"q
-PurchaseProductRequestProto
-productType (
-	productId (	*
-signatureHash (2.SignatureHashProto"p
-PurchaseProductResponseProto
-title (	
-	itemTitle (	
-itemDescription (	
-merchantField (	"D
-PurchaseResultProto
-
-resultCode (
-resultCodeMessage (	"W
-QuerySuggestionProto
-query (	
-estimatedNumResults (
-queryWeight ("A
-QuerySuggestionRequestProto
-query (	
-requestType ("ê
-QuerySuggestionResponseProto<
-
-suggestion (
-2(.QuerySuggestionResponseProto.Suggestion"
-estimatedNumAppSuggestions ($
-estimatedNumQuerySuggestions (h
-
-Suggestion*
-appSuggestion (2.AppSuggestionProto.
-querySuggestion (2.QuerySuggestionProto"T
-RateCommentRequestProto
-assetId (	
-	creatorId (	
-commentRating ("
-RateCommentResponseProto">
-ReconstructDatabaseRequestProto
-retrieveFullHistory ("H
- ReconstructDatabaseResponseProto$
-asset (2.AssetIdentifierProto"%
-RefundRequestProto
-assetId (	"_
-RefundResponseProto
-result ("
-asset (2.ExternalAssetProto
-resultDetail (	"*
-RemoveAssetRequestProto
-assetId (	"Õ
-RequestPropertiesProto
-userAuthToken (	
-userAuthTokenSecure (
-softwareVersion (
-aid (	
-productNameAndVersion (	
-userLanguage (	
-userCountry (	
-operatorName (	
-simOperatorName	 (	
-operatorNumericName
- (	
-simOperatorNumericName (	
-clientId (	
-	loggingId (	"æ
-RequestProto2
-requestProperties (2.RequestPropertiesProto&
-request (
-2.RequestProto.Request—
-RequestB
-requestSpecificProperties (2.RequestSpecificPropertiesProto)
-assetRequest (2.AssetsRequestProto.
-commentsRequest (2.CommentsRequestProto8
-modifyCommentRequest (2.ModifyCommentRequestProto6
-purchasePostRequest (2.PurchasePostRequestProto8
-purchaseOrderRequest (2.PurchaseOrderRequestProto4
-contentSyncRequest	 (2.ContentSyncRequestProto.
-getAssetRequest
- (2.GetAssetRequestProto.
-getImageRequest (2.GetImageRequestProto*
-refundRequest (2.RefundRequestProto>
-purchaseMetadataRequest (2.PurchaseMetadataRequestProto;
-subCategoriesRequest (2.GetSubCategoriesRequestProto<
-uninstallReasonRequest (2.UninstallReasonRequestProto4
-rateCommentRequest (2.RateCommentRequestProto6
-checkLicenseRequest (2.CheckLicenseRequestProto@
-getMarketMetadataRequest (2.GetMarketMetadataRequestProto8
-getCategoriesRequest (2.GetCategoriesRequestProto:
-getCarrierInfoRequest (2.GetCarrierInfoRequestProto4
-removeAssetRequest (2.RemoveAssetRequestProtoD
-restoreApplicationsRequest (2 .RestoreApplicationsRequestProto<
-querySuggestionRequest (2.QuerySuggestionRequestProto6
-billingEventRequest (2.BillingEventRequestProto@
-paypalPreapprovalRequest (2.PaypalPreapprovalRequestProtoN
-paypalPreapprovalDetailsRequest (2%.PaypalPreapprovalDetailsRequestProtoD
-paypalCreateAccountRequest (2 .PaypalCreateAccountRequestProtoV
-#paypalPreapprovalCredentialsRequest (2).PaypalPreapprovalCredentialsRequestProtoN
-inAppRestoreTransactionsRequest (2%.InAppRestoreTransactionsRequestProtoN
-inAppPurchaseInformationRequest  (2%.InAppPurchaseInformationRequestProtoH
-checkForNotificationsRequest! (2".CheckForNotificationsRequestProto>
-ackNotificationsRequest" (2.AckNotificationsRequestProto<
-purchaseProductRequest# (2.PurchaseProductRequestProtoD
-reconstructDatabaseRequest$ (2 .ReconstructDatabaseRequestProtoF
-paypalMassageAddressRequest% (2!.PaypalMassageAddressRequestProto@
-getAddressSnippetRequest& (2.GetAddressSnippetRequestProto"5
-RequestSpecificPropertiesProto
-ifNoneMatch (	"æ
-ResponsePropertiesProto
-result (
-maxAge (
-etag (	
-serverVersion (
-maxAgeConsumable (
-errorMessage (	.
-errorInputField (2.InputValidationError"˜
-ResponseProto)
-response (
-2.ResponseProto.Response8
-pendingNotifications& (2.PendingNotificationsProtoÄ
-Response4
-responseProperties (2.ResponsePropertiesProto,
-assetsResponse (2.AssetsResponseProto0
-commentsResponse (2.CommentsResponseProto:
-modifyCommentResponse (2.ModifyCommentResponseProto8
-purchasePostResponse (2.PurchasePostResponseProto:
-purchaseOrderResponse (2.PurchaseOrderResponseProto6
-contentSyncResponse (2.ContentSyncResponseProto0
-getAssetResponse	 (2.GetAssetResponseProto0
-getImageResponse
- (2.GetImageResponseProto,
-refundResponse (2.RefundResponseProto@
-purchaseMetadataResponse (2.PurchaseMetadataResponseProto=
-subCategoriesResponse (2.GetSubCategoriesResponseProto>
-uninstallReasonResponse (2.UninstallReasonResponseProto6
-rateCommentResponse (2.RateCommentResponseProto8
-checkLicenseResponse (2.CheckLicenseResponseProtoB
-getMarketMetadataResponse (2.GetMarketMetadataResponseProto0
-prefetchedBundle (2.PrefetchedBundleProto:
-getCategoriesResponse (2.GetCategoriesResponseProto<
-getCarrierInfoResponse (2.GetCarrierInfoResponseProtoE
-restoreApplicationResponse (2!.RestoreApplicationsResponseProto>
-querySuggestionResponse (2.QuerySuggestionResponseProto8
-billingEventResponse (2.BillingEventResponseProtoB
-paypalPreapprovalResponse (2.PaypalPreapprovalResponseProtoP
- paypalPreapprovalDetailsResponse (2&.PaypalPreapprovalDetailsResponseProtoF
-paypalCreateAccountResponse (2!.PaypalCreateAccountResponseProtoX
-$paypalPreapprovalCredentialsResponse (2*.PaypalPreapprovalCredentialsResponseProtoP
- inAppRestoreTransactionsResponse (2&.InAppRestoreTransactionsResponseProtoP
- inAppPurchaseInformationResponse (2&.InAppPurchaseInformationResponseProtoJ
-checkForNotificationsResponse  (2#.CheckForNotificationsResponseProto@
-ackNotificationsResponse! (2.AckNotificationsResponseProto>
-purchaseProductResponse" (2.PurchaseProductResponseProtoF
-reconstructDatabaseResponse# (2!.ReconstructDatabaseResponseProtoH
-paypalMassageAddressResponse$ (2".PaypalMassageAddressResponseProtoB
-getAddressSnippetResponse% (2.GetAddressSnippetResponseProto"Ü
-RestoreApplicationsRequestProto
-backupAndroidId (	
-
-tosVersion (	6
-deviceConfiguration (2.DeviceConfigurationProto"I
- RestoreApplicationsResponseProto%
-asset (2.GetAssetResponseProto"/
-RiskHeaderInfoProto
-hashedDeviceInfo (	"L
-SignatureHashProto
-packageName (	
-versionCode (
-hash ("8
-SignedDataProto
-
-signedData (	
-	signature (	"ﬂ
-SingleRequestProtoB
-requestSpecificProperties (2.RequestSpecificPropertiesProto)
-assetRequest (2.AssetsRequestProto.
-commentsRequest (2.CommentsRequestProto8
-modifyCommentRequest (2.ModifyCommentRequestProto6
-purchasePostRequest (2.PurchasePostRequestProto8
-purchaseOrderRequest (2.PurchaseOrderRequestProto4
-contentSyncRequest	 (2.ContentSyncRequestProto.
-getAssetRequest
- (2.GetAssetRequestProto.
-getImageRequest (2.GetImageRequestProto*
-refundRequest (2.RefundRequestProto>
-purchaseMetadataRequest (2.PurchaseMetadataRequestProto;
-subCategoriesRequest (2.GetSubCategoriesRequestProto<
-uninstallReasonRequest (2.UninstallReasonRequestProto4
-rateCommentRequest (2.RateCommentRequestProto6
-checkLicenseRequest (2.CheckLicenseRequestProto@
-getMarketMetadataRequest (2.GetMarketMetadataRequestProto8
-getCategoriesRequest (2.GetCategoriesRequestProto:
-getCarrierInfoRequest (2.GetCarrierInfoRequestProto4
-removeAssetRequest (2.RemoveAssetRequestProtoD
-restoreApplicationsRequest (2 .RestoreApplicationsRequestProto<
-querySuggestionRequest (2.QuerySuggestionRequestProto6
-billingEventRequest (2.BillingEventRequestProto@
-paypalPreapprovalRequest (2.PaypalPreapprovalRequestProtoN
-paypalPreapprovalDetailsRequest (2%.PaypalPreapprovalDetailsRequestProtoD
-paypalCreateAccountRequest (2 .PaypalCreateAccountRequestProtoV
-#paypalPreapprovalCredentialsRequest (2).PaypalPreapprovalCredentialsRequestProtoN
-inAppRestoreTransactionsRequest (2%.InAppRestoreTransactionsRequestProtoQ
-"getInAppPurchaseInformationRequest  (2%.InAppPurchaseInformationRequestProtoH
-checkForNotificationsRequest! (2".CheckForNotificationsRequestProto>
-ackNotificationsRequest" (2.AckNotificationsRequestProto<
-purchaseProductRequest# (2.PurchaseProductRequestProtoD
-reconstructDatabaseRequest$ (2 .ReconstructDatabaseRequestProtoF
-paypalMassageAddressRequest% (2!.PaypalMassageAddressRequestProto@
-getAddressSnippetRequest& (2.GetAddressSnippetRequestProto"‹
-SingleResponseProto4
-responseProperties (2.ResponsePropertiesProto,
-assetsResponse (2.AssetsResponseProto0
-commentsResponse (2.CommentsResponseProto:
-modifyCommentResponse (2.ModifyCommentResponseProto8
-purchasePostResponse (2.PurchasePostResponseProto:
-purchaseOrderResponse (2.PurchaseOrderResponseProto6
-contentSyncResponse (2.ContentSyncResponseProto0
-getAssetResponse	 (2.GetAssetResponseProto0
-getImageResponse
- (2.GetImageResponseProto,
-refundResponse (2.RefundResponseProto@
-purchaseMetadataResponse (2.PurchaseMetadataResponseProto=
-subCategoriesResponse (2.GetSubCategoriesResponseProto>
-uninstallReasonResponse (2.UninstallReasonResponseProto6
-rateCommentResponse (2.RateCommentResponseProto8
-checkLicenseResponse (2.CheckLicenseResponseProtoB
-getMarketMetadataResponse (2.GetMarketMetadataResponseProto:
-getCategoriesResponse (2.GetCategoriesResponseProto<
-getCarrierInfoResponse (2.GetCarrierInfoResponseProtoE
-restoreApplicationResponse (2!.RestoreApplicationsResponseProto>
-querySuggestionResponse (2.QuerySuggestionResponseProto8
-billingEventResponse (2.BillingEventResponseProtoB
-paypalPreapprovalResponse (2.PaypalPreapprovalResponseProtoP
- paypalPreapprovalDetailsResponse (2&.PaypalPreapprovalDetailsResponseProtoF
-paypalCreateAccountResponse (2!.PaypalCreateAccountResponseProtoX
-$paypalPreapprovalCredentialsResponse (2*.PaypalPreapprovalCredentialsResponseProtoP
- inAppRestoreTransactionsResponse (2&.InAppRestoreTransactionsResponseProtoS
-#getInAppPurchaseInformationResponse (2&.InAppPurchaseInformationResponseProtoJ
-checkForNotificationsResponse  (2#.CheckForNotificationsResponseProto@
-ackNotificationsResponse! (2.AckNotificationsResponseProto>
-purchaseProductResponse" (2.PurchaseProductResponseProtoF
-reconstructDatabaseResponse# (2!.ReconstructDatabaseResponseProtoH
-paypalMassageAddressResponse$ (2".PaypalMassageAddressResponseProtoB
-getAddressSnippetResponse% (2.GetAddressSnippetResponseProto"[
-StatusBarNotificationProto
-
-tickerText (	
-contentTitle (	
-contentText (	">
-UninstallReasonRequestProto
-assetId (	
-reason ("
-UninstallReasonResponseProto
