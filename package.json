@@ -12,10 +12,12 @@
   "main": "index.js",
   "private": false,
   "homepage": "https://github.com/dweinstein/node-google-play",
-  "bugs": "https://github.com/dweinstein/node-google-play/issues",
+  "bugs": {
+    "url": "https://github.com/dweinstein/node-google-play/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dweinstein/node-google-play.git"
+    "url": "git+https://github.com/dweinstein/node-google-play.git"
   },
   "files": [
     "lib",
@@ -31,10 +33,18 @@
     "lodash": "~2.4.1",
     "protobufjs": "git+https://github.com/dweinstein/ProtoBuf.js.git#int64-to-number",
     "request": "~2.47.0",
-    "request-debug": "~0.1.1"
+    "request-debug": "~0.1.1",
+    "split": "^0.3.3",
+    "through2": "^0.6.5"
   },
   "devDependencies": {
     "minimist": "^1.1.1",
     "tape": "^4.0.0"
-  }
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "author": "dweinstein",
+  "license": "MIT"
 }
