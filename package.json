@@ -20,14 +20,15 @@
     "url": "git+https://github.com/dweinstein/node-google-play.git"
   },
   "files": [
+    "scripts",
     "lib",
     "index.js"
   ],
   "scripts": {
     "start": "node server.js",
     "test": "tape test/*.test.js",
-    "get-latest-proto": "node ./scripts/get_latest_proto.js",
-    "postinstall": "npm run get-latest-proto"
+    "get-proto": "scripts/get_latest_proto.js",
+    "postinstall": "npm run get-proto"
   },
   "dependencies": {
     "bluebird": "~2.3.6",
