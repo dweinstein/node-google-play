@@ -3,36 +3,29 @@
 [![Build Status](https://travis-ci.org/dweinstein/node-google-play.png)](https://travis-ci.org/dweinstein/node-google-play)
 [![npm version](https://badge.fury.io/js/node-googleplay-api.svg)](http://badge.fury.io/js/node-googleplay-api)
 
+# SYNOPSIS
 
-# Usage
-```
-  var api = require('node-googleplay-api').GooglePlayAPI(
-    process.env.GOOGLE_LOGIN, process.env.GOOGLE_PASSWORD,
-    process.env.ANDROID_ID
-  );
+Call Google Play APIs from Node.
 
-  api.details("com.viber.voip")
-  .then(console.log);
-```
+# USAGE
 
-# Build protobuf .desc
+```javascript
+  var api = require('node-googleplay-api').GooglePlayAPI(user,pass, android_id);
 
-*This has already been done for you, for the specific Android device being emulated by this library.*
+  // promise
+  api.details("com.viber.voip").then(console.log);
 
-```
-± % protoc --descriptor_set_out=googleplay.desc --include_imports googleplay.proto
+  // callback
+  api.details("com.viber.voip", function (err, res) {
+    console.log(err?err:res);
+  }
 ```
 
-# Working
-- `details`, `related`, `getDownloadInfo`, `delivery`
+# NOTES
 
-# TODO
-- [x] bulk detail requests
-- [ ] download files
-- [ ] support additional device configurations and user agents.
-- see other `@todo` markings in the code.
+- This client turns all byte fields to strings.
 
-# Examples
+# EXAMPLES
 
 **Assumes you have set the following environment variables: `GOOGLE_LOGIN`, `GOOGLE_PASSWORD`, `ANDROID_ID`**
 
