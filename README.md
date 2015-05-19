@@ -5,7 +5,7 @@
 
 # SYNOPSIS
 
-Call Google Play APIs from Node.
+Call Google Play APIs from Node. You might want to check out the [CLI](https://github.com/dweinstein/node-google-play-cli) package as well.
 
 # USAGE
 
