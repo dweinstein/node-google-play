@@ -1,2 +1,2 @@
 /node_modules
-/lib/data/googleplay.proto
+/lib/data/*.proto
