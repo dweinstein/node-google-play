@@ -35,7 +35,7 @@
     "debug": "^2.2.0",
     "json-stable-stringify": "~1.0.0",
     "lodash": "~2.4.1",
-    "protobufjs": "git+https://github.com/dweinstein/ProtoBuf.js.git#int64-to-number",
+    "protobufjs": "^4.0.0-b4",
     "request": "~2.47.0",
     "request-debug": "~0.1.1",
     "split": "^0.3.3",
