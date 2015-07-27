@@ -27,7 +27,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "tape test/*.test.js",
-    "get-proto": "scripts/get_latest_proto.js",
+    "get-proto": "node scripts/get_latest_proto.js",
     "postinstall": "npm run get-proto"
   },
   "dependencies": {
