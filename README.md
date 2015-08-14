@@ -10,7 +10,7 @@ Call Google Play APIs from Node. You might want to check out the [CLI](https://g
 # USAGE
 
 ```javascript
-  var api = require('node-googleplay-api').GooglePlayAPI(user,pass, android_id);
+  var api = require('gpapi').GooglePlayAPI(user,pass, android_id);
 
   // promise
   api.details("com.viber.voip").then(console.log);
