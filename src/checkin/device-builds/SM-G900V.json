@@ -1,0 +1,15 @@
+{
+  "id": "Verizon/kltevzw/kltevzw:4.4.2/KOT49H/G900VVRU1ANCG:user/release-keys",
+  "product": "qcom",
+  "carrier": "Verizon",
+  "radio": "G900VVRU1ANCG",
+  "bootloader": "G900VVRU1ANCG",
+  "client": "android-verizon",
+  "googleServices": 7571038,
+  "device": "kltevzw",
+  "sdkVersion": 19,
+  "model": "SM-G900V",
+  "manufacturer": "samsung",
+  "buildProduct": "kltevzw",
+  "otaInstalled": false
+}

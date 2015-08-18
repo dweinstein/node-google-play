@@ -1,0 +1,15 @@
+{
+  "id": "google/yakju/maguro:4.1.1/JRO03C/398337:user/release-keys",
+  "product": "shamu",
+  "carrier": "Verizon",
+  "radio": "I9250XXLA2",
+  "bootloader": "PRIMELA03",
+  "client": "android-google",
+  "googleServices": 16,
+  "device": "maguro",
+  "sdkVersion": 16,
+  "model": "Galaxy Nexus",
+  "manufacturer": "Samsung",
+  "buildProduct": "yakju",
+  "otaInstalled": false
+}
