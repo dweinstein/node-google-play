@@ -32,12 +32,12 @@ function urlForVerPath(ver, path) {
 var files = [
   {
     path: rel('/../lib/data/googleplay.proto'),
-    url: urlForVerPath(VER, '/googleplay.proto'),
+    url: urlForVerPath(VER, 'googleplay.proto'),
     through: bytesToString
   },
   {
     path: rel('/../lib/data/checkin.proto'),
-    url: urlForVerPath(VER, '/checkin/checkin_merged.proto'),
+    url: urlForVerPath(VER, 'checkin/checkin_merged.proto'),
     through: unsplit
   }
 ];
