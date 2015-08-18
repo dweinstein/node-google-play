@@ -5,7 +5,6 @@ var split = require('split');
 var through = require('through2').obj;
 var fmt = require('util').format;
 
-var file = fs.createWriteStream(__dirname+'/../data/googleplay.proto');
 var BASE_URL = "https://raw.githubusercontent.com/dweinstein/google-play-proto/%s/%s";
 var VER = 'v1.0.4';
 
@@ -31,13 +30,13 @@ function urlForVerPath(ver, path) {
 
 var files = [
   {
-    path: rel('/../lib/data/googleplay.proto'),
-    url: urlForVerPath(VER, '/googleplay.proto'),
+    path: rel('/../data/googleplay.proto'),
+    url: urlForVerPath(VER, 'googleplay.proto'),
     through: bytesToString
   },
   {
-    path: rel('/../lib/data/checkin.proto'),
-    url: urlForVerPath(VER, '/checkin/checkin_merged.proto'),
+    path: rel('/../data/checkin.proto'),
+    url: urlForVerPath(VER, 'checkin/checkin_merged.proto'),
     through: unsplit
   }
 ];
