@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+var GooglePlay = require('../lib/api');
+var rc = require('../lib/config');
+var getAuthToken = require ('../lib/login/get-auth-token');
+
+getAuthToken(
+  rc.fdfe.login,
+  rc.username,
+  rc.password,
+  rc.androidId
+).then(function(res) {
+  console.log(res);
+});
+

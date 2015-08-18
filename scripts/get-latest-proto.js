@@ -5,7 +5,7 @@ var split = require('split');
 var through = require('through2').obj;
 var fmt = require('util').format;
 
-var file = fs.createWriteStream(__dirname+'/../lib/data/googleplay.proto');
+var file = fs.createWriteStream(__dirname+'/../data/googleplay.proto');
 var BASE_URL = "https://raw.githubusercontent.com/dweinstein/google-play-proto/%s/%s";
 var VER = 'v1.0.4';
 

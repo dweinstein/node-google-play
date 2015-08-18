@@ -1,2 +1,3 @@
 /node_modules
-/lib/data/*.proto
+/data/*.proto
+npm-debug.log
