@@ -8,7 +8,7 @@ test('details api', function (t) {
     t.notOk(err, 'no error');
     t.ok(res, 'returned results');
     t.equal(res.length, 2, 'returned two results');
-    t.deepEqual(res.map(d => d.docid), pkgs, 'returned results for pkgs');
+    t.deepEqual(res.map(function (d) { return d.docid; }), pkgs, 'returned results for pkgs');
     t.end();
   });
 });
