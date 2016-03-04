@@ -3,9 +3,12 @@ var api = require('./api');
 var test = require('tape');
 
 test('details api', function (t) {
-  api.bulkDetails(['com.viber.voip', 'air.WatchESPN'], function (err, res) {
+  var pkgs = ['com.viber.voip', 'air.WatchESPN'];
+  api.bulkDetails(pkgs, function (err, res) {
     t.notOk(err, 'no error');
     t.ok(res, 'returned results');
+    t.equal(res.length, 2, 'returned two results');
+    t.deepEqual(res.map(d => d.docid), pkgs, 'returned results for pkgs');
     t.end();
   });
 });
