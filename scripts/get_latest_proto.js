@@ -7,7 +7,7 @@ var fmt = require('util').format;
 
 var file = fs.createWriteStream(__dirname+'/../lib/data/googleplay.proto');
 var BASE_URL = "https://raw.githubusercontent.com/dweinstein/google-play-proto/%s/%s";
-var VER = 'v1.0.4';
+var VER = 'v1.0.5';
 
 function bytesToString(chunk, enc, cb) {
   process.nextTick(function() {
