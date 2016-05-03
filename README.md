@@ -1,4 +1,4 @@
-[![NPM](https://nodei.co/npm/gpapi.png)](https://nodei.co/npm/gpapi/)
+[![NPM](https://nodei.co/npm/gpapi.png?downloads=true)](https://nodei.co/npm/gpapi/)
 
 [![Build Status](https://travis-ci.org/dweinstein/node-google-play.png)](https://travis-ci.org/dweinstein/node-google-play)
 [![npm version](https://badge.fury.io/js/gpapi.svg)](http://badge.fury.io/js/gpapi)
