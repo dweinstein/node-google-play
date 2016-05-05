@@ -110,3 +110,18 @@ Call Google Play APIs from Node. You might want to check out the [CLI](https://g
 }
 ```
 
+## Complete Download info - complete object to be passed seamlessly to request.js
+
+```javascript
+± % node examples/completeDownloadInfo.js | jq '.'
+{ url: 'https://android.clients.google.com/market/download/Download?packageName=com.viber.voip&versionCode=37&ssl=1&token=xxxxxxxxx&downloadId=-xxxxxxxxxxx',
+  jar: 
+   RequestJar {
+     _jar: 
+      CookieJar {
+        enableLooseMode: true,
+        store: { idx: { 'android.clients.google.com': { '/market/download': { MarketDA: Cookie="MarketDA=xxxxxxxx; Path=/market/download; hostOnly=true; aAge=29ms; cAge=29ms" } } } } } },
+  headers: 
+   { 'User-Agent': 'AndroidDownloadManager/4.2.2 (Linux; U; Android 4.2.2; Galaxy Nexus Build/JDQ39)',
+     'Accept-Encoding': '' } }
+```
