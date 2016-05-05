@@ -7,7 +7,6 @@ test('completeDownloadInfo api', function (t) {
     t.plan(8);
     api.completeDownloadInfo('com.viber.voip', 37, function (err, res) {
         t.notOk(err, 'no error');
-        console.log(res)
         t.ok(res, 'returned results');
 
         t.ok(res.hasOwnProperty('url'), 'url in response');
