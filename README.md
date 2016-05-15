@@ -10,20 +10,41 @@ Call Google Play APIs from Node. You might want to check out the [CLI](https://g
 # USAGE
 
 ```javascript
-  var api = require('gpapi').GooglePlayAPI(user,pass, android_id);
+  // Create the API object:
+  var api = require('gpapi').GooglePlayAPI(user, pass, android_id);
 
-  // promise
+  // OR (using object as first argument):
+  var api = require('gpapi').GooglePlayAPI({
+    username: user,
+    password: pass,
+    androidId: android_id
+  });
+
+  // usage via Promise
   api.details("com.viber.voip").then(console.log);
 
-  // callback
+  // usage via node callback convention
   api.details("com.viber.voip", function (err, res) {
-    console.log(err?err:res);
+    console.log(err ? err : res);
   }
 ```
 
-# NOTES
+# Options
 
-- This client turns all byte fields to strings.
+The options accepted:
+
+```js
+{
+  username: username,
+  password: password,
+  androidId: androidId,
+  countryCode: 'us',
+  language: 'en_US',
+  requestsDefaultParams: requestsDefaultParams
+}
+```
+
+Note that this library uses the [`requests` module](https://github.com/request/request), therefore you can [control proxy behavior](https://github.com/request/request#controlling-proxy-behaviour-using-environment-variables) or override defaults via the `requestDefaultsParams` option.
 
 # EXAMPLES
 
@@ -125,3 +146,7 @@ Call Google Play APIs from Node. You might want to check out the [CLI](https://g
    { 'User-Agent': 'AndroidDownloadManager/4.2.2 (Linux; U; Android 4.2.2; Galaxy Nexus Build/JDQ39)',
      'Accept-Encoding': '' } }
 ```
+
+# NOTES
+
+- This client turns all byte fields to strings.
