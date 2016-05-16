@@ -4,10 +4,14 @@ var AppNotFreeError = require('../lib/errors').AppNotFreeError;
 var RequestError = require('../lib/errors').RequestError;
 
 test('downloadInfo api', function (t) {
-  t.plan(2);
+  t.plan(6);
   api.downloadInfo('com.viber.voip', 37, function (err, res) {
     t.notOk(err, 'no error');
     t.ok(res, 'returned results');
+    t.ok(res.signature, 'signature');
+    t.ok(res.downloadSize, 'downloadSize');
+    t.ok(res.downloadUrl, 'downloadUrl');
+    t.ok(res.downloadAuthCookie, 'downloadAuthCookie');
   });
 });
 
