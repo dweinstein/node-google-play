@@ -3,10 +3,14 @@ var api = require('./api');
 var RequestError = require('../lib/errors').RequestError;
 
 test('details api', function (t) {
-  t.plan(2);
+  t.plan(6);
   api.details('com.viber.voip', function (err, res) {
     t.notOk(err, 'no error');
     t.ok(res, 'returned results');
+    t.ok(res.details, 'details');
+    t.ok(res.details.appDetails, 'appDetails');
+    t.ok(res.details.appDetails.packageName, 'packageName');
+    t.ok(res.details.appDetails.versionCode, 'versionCode');
   });
 });
 
