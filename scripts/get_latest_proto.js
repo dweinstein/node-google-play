@@ -6,7 +6,7 @@ var through = require('through2').obj;
 var fmt = require('util').format;
 
 var BASE_URL = 'https://raw.githubusercontent.com/dweinstein/google-play-proto/%s/%s';
-var VER = 'v1.0.8';
+var VER = 'v1.1.0';
 
 function bytesToString (chunk, enc, cb) {
   process.nextTick(function () {
