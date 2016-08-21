@@ -39,7 +39,6 @@ test('downloadInfo api - Item not found ', function (t) {
   });
 });
 
-// TODO: update the travis device test profile
 test('additional file download info', function (t) {
   t.plan(5);
   api.additionalFileCompleteDownloadInfo('com.rovio.baba', 2080017, 0, function (err, res) {
