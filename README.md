@@ -7,26 +7,27 @@
 
 Call Google Play APIs from Node. You might want to check out the [CLI](https://github.com/dweinstein/node-google-play-cli) package as well.
 
+By default behaves like a Nexus 5X device with SDK 23 for app downloads.
+
 # USAGE
 
 ```javascript
-  // Create the API object:
-  var api = require('gpapi').GooglePlayAPI(user, pass, android_id);
+// assumes android id of a Nexus 5X device checked in w/ Play Store 6.8.44.F
+var api = require('gpapi').GooglePlayAPI({
+  username: user,
+  password: pass,
+  androidId: android_id
+  // apiUserAgent: optional API agent override (see below)
+  // downloadUserAgent: optional download agent override (see below)
+});
 
-  // OR (using object as first argument):
-  var api = require('gpapi').GooglePlayAPI({
-    username: user,
-    password: pass,
-    androidId: android_id
-  });
+// usage via Promise
+api.details("com.viber.voip").then(console.log);
 
-  // usage via Promise
-  api.details("com.viber.voip").then(console.log);
-
-  // usage via node callback convention
-  api.details("com.viber.voip", function (err, res) {
-    console.log(err ? err : res);
-  }
+// usage via node callback convention
+api.details("com.viber.voip", function (err, res) {
+  console.log(err ? err : res);
+}
 ```
 
 # Options
@@ -40,11 +41,55 @@ The options accepted:
   androidId: androidId,
   countryCode: 'us',
   language: 'en_US',
-  requestsDefaultParams: requestsDefaultParams
+  requestsDefaultParams: requestsDefaultParams,
+  apiUserAgent: USER_AGENT,
+  downloadUserAgent: DOWNLOAD_MANAGER_USER_AGENT
 }
 ```
 
+## Defaults
+
+The default `apiUserAgent` and `downloadUserAgent` is from  Nexus 5X device, w/
+Play Store version 6.8.44:
+
+```
+const USER_AGENT = (
+    'Android-Finsky/6.8.44.F-all%20%5B0%5D%203087104 ' +
+    '(api=3,versionCode=80684400,sdk=23,device=bullhead,'+
+    'hardware=bullhead,product=bullhead,platformVersionRelease=6.0.1,'+
+    'model=Nexus%205X,buildId=MHC19Q,isWideScreen=0)'
+);
+
+const DOWNLOAD_MANAGER_USER_AGENT = (
+  'AndroidDownloadManager/6.0.1 (Linux; U; Android 6.0.1; Nexus 5X Build/MHC19Q)'
+);
+```
+
+Therefore you will have best luck getting an `ANDROID_ID` from a Nexus 5X or
+override the value via the options object for your particular device.
+
+## ID and User-Agent
+
+Note that you'll need to grab the device-id (`ANDROID_ID`) and associated
+user-agents for best performance of the library.
+
+One way is to setup an HTTP proxy and install a CA to the device to see the
+network traffic. Here is an example from a
+[mitmproxy](https://github.com/mitmproxy/mitmproxy) session:
+
+![Device ID and API User-Agent](./docs/devid-ua-1.png?raw=true "Device ID and API UA")
+
+![Download User-Agent](./docs/download-ua?raw=true "Download User Agent")
+
+These values can then be passed to the API so that apps can be downloaded with the restrictions of the particular device.
+
+## requests defaults
 Note that this library uses the [`requests` module](https://github.com/request/request), therefore you can [control proxy behavior](https://github.com/request/request#controlling-proxy-behaviour-using-environment-variables) or override defaults via the `requestDefaultsParams` option.
+
+## Debugging
+
+Use env variable `DEBUG` i.e., `DEBUG=gp:api` to enable debug output. This is done via [request-debug](https://github.com/request/request-debug).
+
 
 # EXAMPLES
 
@@ -136,9 +181,9 @@ Note that this library uses the [`requests` module](https://github.com/request/r
 ```javascript
 ± % node examples/completeDownloadInfo.js | jq '.'
 { url: 'https://android.clients.google.com/market/download/Download?packageName=com.viber.voip&versionCode=37&ssl=1&token=xxxxxxxxx&downloadId=-xxxxxxxxxxx',
-  jar: 
+  jar:
    RequestJar {
-     _jar: 
+     _jar:
       CookieJar {
         enableLooseMode: true,
         store: { idx: { 'android.clients.google.com': { '/market/download': { MarketDA: Cookie="MarketDA=xxxxxxxx; Path=/market/download; hostOnly=true; aAge=29ms; cAge=29ms" } } } } } },

@@ -1,13 +1,4 @@
-
-var use_cache = false;
-var debug = false;
-
-var api = require('../lib/api').GooglePlayAPI(
-  process.env.GOOGLE_LOGIN, process.env.GOOGLE_PASSWORD,
-  process.env.ANDROID_ID,
-  use_cache,
-  debug
-);
+var api = require('./common-api-init');
 
 function unescape (str) {
   return (str + Array(5 - str.length % 4).join('=')).replace(/\-/g,'+').replace(/_/g, '/');

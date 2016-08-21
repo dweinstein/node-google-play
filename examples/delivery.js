@@ -1,14 +1,4 @@
-var GooglePlayAPI = require('../lib/api').GooglePlayAPI;
-
-var use_cache = false;
-var debug = false;
-
-var api = GooglePlayAPI(
-  process.env.GOOGLE_LOGIN, process.env.GOOGLE_PASSWORD,
-  process.env.ANDROID_ID,
-  use_cache,
-  debug
-);
+var api = require('./common-api-init');
 
 function getDeliveryData(pkg) {
   return api.login()

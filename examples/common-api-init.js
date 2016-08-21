@@ -1,4 +1,5 @@
 var GooglePlayAPI = require('../lib/api').GooglePlayAPI;
+
 module.exports = GooglePlayAPI({
   username: process.env.GOOGLE_LOGIN,
   password: process.env.GOOGLE_PASSWORD,
@@ -6,4 +7,3 @@ module.exports = GooglePlayAPI({
   useCache: false,
   debug: false
 });
-
