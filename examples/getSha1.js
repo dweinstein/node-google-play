@@ -4,7 +4,7 @@ function unescape (str) {
   return (str + Array(5 - str.length % 4).join('=')).replace(/\-/g, '+').replace(/_/g, '/');
 }
 
-function decode_digest (str) {
+function decodeDigest (str) {
   return new Buffer(unescape(str), 'base64').toString('hex');
 }
 
@@ -16,7 +16,7 @@ function getDeliveryDataVc (pkg, vc) {
 }
 
 function signatureToSha1 (sig) {
-  return decode_digest(sig);
+  return decodeDigest(sig);
 }
 
 var argv = require('minimist')(process.argv.slice(2));
