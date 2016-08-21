@@ -79,9 +79,10 @@ network traffic. Here is an example from a
 
 ![Device ID and API User-Agent](./docs/devid-ua-1.png?raw=true "Device ID and API UA")
 
-![Download User-Agent](./docs/download-ua?raw=true "Download User Agent")
+![Download User-Agent](./docs/download-ua.png?raw=true "Download User Agent")
 
-These values can then be passed to the API so that apps can be downloaded with the restrictions of the particular device.
+These values can then be passed to the API so that apps can be downloaded with
+the restrictions of the particular device.
 
 ## requests defaults
 Note that this library uses the [`requests` module](https://github.com/request/request), therefore you can [control proxy behavior](https://github.com/request/request#controlling-proxy-behaviour-using-environment-variables) or override defaults via the `requestDefaultsParams` option.
