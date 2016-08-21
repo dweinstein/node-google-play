@@ -1,5 +1,5 @@
 const lookupRestriction = require('../lib/lookup-restriction');
-var test = require('tape');
+var test = require('tap').test;
 
 test('lookup restriction', function (t) {
   test('0', function (t) {

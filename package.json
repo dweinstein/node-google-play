@@ -24,10 +24,15 @@
     "lib",
     "index.js"
   ],
+  "semistandard": {
+    "ignore": [
+      "/lib/errors.js"
+    ]
+  },
   "scripts": {
     "start": "node server.js",
-    "test": "tape test/*.test.js",
-    "get-proto": "node scripts/get_latest_proto.js",
+    "test": "semistandard && tap test/*.test.js",
+    "get-proto": "node scripts/get-latest-proto.js",
     "postinstall": "npm run get-proto"
   },
   "dependencies": {
@@ -43,7 +48,8 @@
   },
   "devDependencies": {
     "minimist": "^1.1.1",
-    "tape": "^4.0.0"
+    "semistandard": "*",
+    "tap": "*"
   },
   "directories": {
     "example": "examples",

@@ -1,4 +1,4 @@
-var test = require('tape');
+var test = require('tap').test;
 var api = require('./api');
 var RequestError = require('../lib/errors').RequestError;
 
