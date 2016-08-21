@@ -1,6 +1,6 @@
 var api = require('./api');
 
-var test = require('tape');
+var test = require('tap').test;
 
 test('search api', function (t) {
   api.search('viber', function (err, res) {

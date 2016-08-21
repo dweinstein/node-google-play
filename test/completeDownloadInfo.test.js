@@ -1,5 +1,5 @@
 var api = require('./api');
-var test = require('tape');
+var test = require('tap').test;
 var AppNotFreeError = require('../lib/errors').AppNotFreeError;
 var RequestError = require('../lib/errors').RequestError;
 
@@ -21,7 +21,7 @@ test('completeDownloadInfo api', function (t) {
 });
 
 // TODO: fix this test
-test.skip('completeDownloadInfo api - Paid apps', function (t) {
+test('completeDownloadInfo api - Paid apps', { skip: true }, function (t) {
   t.plan(5);
   api.completeDownloadInfo('com.mojang.minecraftpe', 740140009, function (err, res) {
     t.ok(err, 'error expected');

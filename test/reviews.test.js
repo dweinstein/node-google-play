@@ -1,6 +1,6 @@
 var api = require('./api');
 
-var test = require('tape');
+var test = require('tap').test;
 
 test('review api', function (t) {
   api.reviews('com.viber.voip', 20, 20, function (err, res) {

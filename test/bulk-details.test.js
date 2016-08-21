@@ -1,6 +1,6 @@
 var api = require('./api');
 
-var test = require('tape');
+var test = require('tap').test;
 
 test('details api', function (t) {
   var pkgs = ['com.viber.voip', 'air.WatchESPN'];
