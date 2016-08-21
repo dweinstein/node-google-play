@@ -32,7 +32,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "semistandard && tap test/*.test.js",
-    "get-proto": "node scripts/get_latest_proto.js",
+    "get-proto": "node scripts/get-latest-proto.js",
     "postinstall": "npm run get-proto"
   },
   "dependencies": {

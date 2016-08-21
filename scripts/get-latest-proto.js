@@ -4,6 +4,7 @@ var fs = require('fs');
 var split = require('split');
 var through = require('through2').obj;
 var fmt = require('util').format;
+var join = require('path').join;
 
 var BASE_URL = 'https://raw.githubusercontent.com/dweinstein/google-play-proto/%s/%s';
 var VER = 'v1.1.0';
@@ -21,7 +22,7 @@ function unsplit (chunk, enc, cb) {
 }
 
 function rel (path) {
-  return __dirname + path;
+  return join(__dirname, path);
 }
 
 function urlForVerPath (ver, path) {
