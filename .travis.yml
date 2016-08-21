@@ -1,11 +1,11 @@
 language: node_js
 node_js:
-  - "4"
-  - "5"
+  - '5'
+  - '6'
 script:
   - npm test
 env:
   global:
-    - secure: GQmuKiWbVHnPCR7WAy3NCv652dHmnmK/1LOfQlbmhan6+cSMJ5Y1aFHBSmdQ5TzNu0lvZPeTlkQrTsae7sS4gKhyXlOdDp0ILOkfdKf9T6oNwGQjzm5x0v/WFAMQzC1Mr6FLxpW/FwKhVa3Czkrx6Gv6+gkBXgbsHY1LOErisxY=
-    - secure: Qkknepl5raIf/A8s7tJkN1NRQPGymNomANim6VY4oMycuMwUG87uWi4yLiaTmyKQPkQb1lW+SdusYZ5Ud0cIwKI+xk0b1RxsTQkc1g18QlfNcu9BBdT2rXef729KXQJhJcYyEbM8cR+qrKuzueOz/ysU/pogDXb4Hatc6ePYGOg=
-    - secure: Y/lZBh0+l3206I2ytelgXnXwtHZUS0ff7kcRSOjI8P3vRqOs7UdeqlZDRQfrpW7TZ2EI4G6mR0giZGOIITC7CNWv+QYgDT/nrnih8t+Su2TGsZARR5cOUYDYxaaLMRxdiMpZ5V/veuHhJDL0C4MOd8xR56y7493cbznPvQu0jdo=
+    - secure: "BZ2tPb/zQoqTKsBAcIdn/YPLJAmmJLih0NtdmOZl0H2c+nl57EC2rVIdm8e0V8G2B2Ho3L5KoLiiK0LafulCRWZ/sL/vR09kGMAccGR/qITkQ4FFWm1dbdoD00G9GHz2/7igyFhgmJ7zpNTkd8ND4k++mDHmLgh40Tg0TU/Ej8Q="
+    - secure: "Qg60PWwbOpVTjaRHA5D2lUBAIFwFJ5iLMjlMIyKpzlXIUSxBYg7xpZSfM+sA7vDHejlIsCCgMakyexWNbBj8po3DeRv9kZKfp44/SYoGhqFGEYzifmbXWbeJfBpouIJ1t/1YBUoBjHP190+3QnzDsyvrzJtmROPkRkW752SYco0="
+    - secure: "Tc2RSamcEEHUqPek2t1jQWCc/ZImEgB5wF3TsWPvJ9Wx/NbMLI50yZygWR+yB9D0i6bpn/rcCbGMXVkX0qpVE0/df3KIieR23ftWbaIH1HtJcpCWY2qXdzyUAMncVrnVi3WxJsREV9on8IAjINbhalwVK4Ygoy3E3XD6iV2ibeE="
