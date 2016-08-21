@@ -9,4 +9,3 @@ test('search api', function (t) {
     t.end();
   });
 });
-

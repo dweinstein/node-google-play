@@ -5,27 +5,26 @@ var split = require('split');
 var through = require('through2').obj;
 var fmt = require('util').format;
 
-var file = fs.createWriteStream(__dirname+'/../lib/data/googleplay.proto');
-var BASE_URL = "https://raw.githubusercontent.com/dweinstein/google-play-proto/%s/%s";
+var BASE_URL = 'https://raw.githubusercontent.com/dweinstein/google-play-proto/%s/%s';
 var VER = 'v1.0.8';
 
-function bytesToString(chunk, enc, cb) {
-  process.nextTick(function() {
-    cb(null, chunk.replace(/bytes/,'string')+'\n');
+function bytesToString (chunk, enc, cb) {
+  process.nextTick(function () {
+    cb(null, chunk.replace(/bytes/, 'string') + '\n');
   });
 }
 
-function unsplit(chunk, enc, cb) {
-  process.nextTick(function() {
-    return cb(null, chunk+'\n');
+function unsplit (chunk, enc, cb) {
+  process.nextTick(function () {
+    return cb(null, chunk + '\n');
   });
 }
 
-function rel(path) {
-  return __dirname+path;
+function rel (path) {
+  return __dirname + path;
 }
 
-function urlForVerPath(ver, path) {
+function urlForVerPath (ver, path) {
   return fmt(BASE_URL, ver, path);
 }
 
@@ -42,7 +41,7 @@ var files = [
   }
 ];
 
-function done(err) {
+function done (err) {
   if (err) {
     console.log(err);
     process.exit(1);
@@ -57,23 +56,21 @@ if (count > 0) {
     var path = info.path;
     var middle = info.through;
 
-    var request = https.get(url, function(response) {
-      if (response.statusCode != 200) {
+    https.get(url, function (response) {
+      if (response.statusCode !== 200) {
         return done(new Error(fmt('url %s failed, message: %s', url, response.statusMessage)));
       }
 
       var file = fs.createWriteStream(path);
 
       response
-      .pipe(split())
-      .pipe(through(middle))
-      .pipe(file, {end: true});
+        .pipe(split())
+        .pipe(through(middle))
+        .pipe(file, {end: true});
 
-      response.once('end', function() {
+      response.once('end', function () {
         if (--count <= 0) done();
       });
-
     });
   });
 }
-

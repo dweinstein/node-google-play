@@ -6,4 +6,3 @@ module.exports = GooglePlayAPI({
   useCache: false,
   debug: false
 });
-
