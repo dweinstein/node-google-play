@@ -1,7 +1,7 @@
 var api = require('./common-api-init');
 
 function unescape (str) {
-  return (str + Array(5 - str.length % 4).join('=')).replace(/\-/g, '+').replace(/_/g, '/');
+  return (str + Array(5 - str.length % 4).join('=')).replace(/-/g, '+').replace(/_/g, '/');
 }
 
 function decodeDigest (str) {
