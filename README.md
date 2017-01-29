@@ -27,7 +27,7 @@ api.details("com.viber.voip").then(console.log);
 // usage via node callback convention
 api.details("com.viber.voip", function (err, res) {
   console.log(err ? err : res);
-}):
+});
 ```
 
 # Options
