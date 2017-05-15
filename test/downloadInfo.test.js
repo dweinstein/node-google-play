@@ -5,7 +5,7 @@ var RequestError = require('../lib/errors').RequestError;
 
 test('downloadInfo api', function (t) {
   t.plan(7);
-  api.downloadInfo('com.viber.voip', 37, function (err, res) {
+  api.downloadInfo('com.viber.voip', 120263, function (err, res) {
     t.false(err, 'no error');
     t.ok(res, 'returned results');
     t.type(res, 'object', 'returned object');
