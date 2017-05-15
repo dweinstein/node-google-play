@@ -6,7 +6,7 @@ var RequestError = require('../lib/errors').RequestError;
 test('completeDownloadInfo api', function (t) {
   t.plan(8);
   api.completeDownloadInfo('com.viber.voip', 37, function (err, res) {
-    t.notOk(err, 'no error');
+    t.false(err, 'no error');
     t.ok(res, 'returned results');
 
     t.ok(res.hasOwnProperty('url'), 'url in response');
@@ -28,7 +28,7 @@ test('completeDownloadInfo api - Paid apps', { skip: true }, function (t) {
     t.ok(err instanceof AppNotFreeError, 'error instanceof AppNotFreeError');
     t.ok(err.name === 'AppNotFreeError', 'error.name is AppNotFreeError');
     t.ok(err.price, 'error has price');
-    t.notOk(res, 'no results');
+    t.false(res, 'no results');
     t.comment('price: ' + err.price);
   });
 });
@@ -38,7 +38,7 @@ test('completeDownloadInfo api - Item not found ', function (t) {
   api.completeDownloadInfo('i.should.probably.not.exist', 25, function (err, res) {
     t.ok(err instanceof RequestError, 'RequestError');
     t.ok(err, 'error returned');
-    t.notOk(res, 'no response');
+    t.false(res, 'no response');
     t.ok(err.message = 'Item not found', 'error msg');
     t.equal(err.statusCode, 403, 'status code');
   });

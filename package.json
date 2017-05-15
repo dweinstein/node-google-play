@@ -36,7 +36,7 @@
     "postinstall": "npm run get-proto"
   },
   "dependencies": {
-    "bluebird": "^3.3.3",
+    "bluebird": "^3.5.0",
     "debug": "^2.2.0",
     "json-stable-stringify": "~1.0.0",
     "lodash": "^4.6.1",

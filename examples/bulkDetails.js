@@ -3,7 +3,7 @@ var api = require('./common-api-init');
 function getBulkDetails (pkgs) {
   return api.login()
     .then(function () {
-      api.bulkDetails(pkgs).then(function (res) {
+      return api.bulkDetails(pkgs).then(function (res) {
         console.log('%j', res);
       });
     });
