@@ -73,9 +73,14 @@ override the value via the options object for your particular device.
 Note that you'll need to grab the device-id (`ANDROID_ID`) and associated
 user-agents for best performance of the library.
 
-One way is to setup an HTTP proxy and install a CA to the device to see the
-network traffic. Here is an example from a
-[mitmproxy](https://github.com/mitmproxy/mitmproxy) session:
+- `ANDROID_ID` - the ID for the device for Google. This is the GSF ID *not* the
+  id from dialing `*#*#8255#*#*`. You can get the gsf id e.g., using the
+  [device id
+  app](https://play.google.com/store/apps/details?id=com.evozi.deviceid&hl=en)
+
+- Another way is to setup an HTTP proxy and install a CA to the device to see
+  the network traffic. Here is an example from a
+  [mitmproxy](https://github.com/mitmproxy/mitmproxy) session:
 
 ![Device ID and API User-Agent](./docs/devid-ua-1.png?raw=true "Device ID and API UA")
 
