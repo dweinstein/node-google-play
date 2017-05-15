@@ -31,7 +31,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "semistandard && tap test/*.test.js",
+    "test": "semistandard && tap test/all.test.js",
     "get-proto": "node scripts/get-latest-proto.js",
     "postinstall": "npm run get-proto"
   },
