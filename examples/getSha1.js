@@ -5,7 +5,7 @@ function unescape (str) {
 }
 
 function decodeDigest (str) {
-  return new Buffer(unescape(str), 'base64').toString('hex');
+  return Buffer.from(unescape(str), 'base64').toString('hex');
 }
 
 function getDeliveryDataVc (pkg, vc) {
