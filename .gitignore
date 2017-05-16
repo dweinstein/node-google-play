@@ -1,3 +1,4 @@
 /node_modules
 /lib/data/*.proto
 npm-debug.log
+.envrc
