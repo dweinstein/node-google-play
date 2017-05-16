@@ -7,7 +7,7 @@ var fmt = require('util').format;
 var join = require('path').join;
 
 var BASE_URL = 'https://raw.githubusercontent.com/dweinstein/google-play-proto/%s/%s';
-var VER = 'v1.2.0';
+var VER = 'v1.3.0';
 
 function bytesToString (chunk, enc, cb) {
   process.nextTick(function () {
