@@ -2,7 +2,7 @@ var api = require('./common-api-init');
 
 function getAppDetails (pkg) {
   return api.details(pkg).then(function (res) {
-    console.log('%j', res);
+    console.log(JSON.stringify(res, null, 4));
   });
 }
 

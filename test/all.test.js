@@ -29,13 +29,12 @@ test('bulkDetails api - missing packages', function (t) {
 });
 
 test('completeDownloadInfo api', function (t) {
-  t.plan(8);
+  t.plan(7);
   api.completeDownloadInfo('com.viber.voip', 37, function (err, res) {
     t.false(err, 'no error');
     t.ok(res, 'returned results');
 
     t.ok(res.hasOwnProperty('url'), 'url in response');
-    t.ok(res.url.indexOf('com.viber.voip') > -1, 'package name should be in response url');
 
     t.ok(res.hasOwnProperty('jar'), 'response should have cookie jar');
 

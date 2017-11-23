@@ -1,13 +1,17 @@
 var api = require('./common-api-init');
 
-function getDownloadInfo (pkg) {
+function getDownloadInfo (pkg, vc) {
   return api.login()
     .then(function () {
       api.details(pkg).then(function (res) {
         return res.details.appDetails.versionCode;
       })
         .then(function (versionCode) {
-          return api.downloadInfo(pkg, versionCode);
+          if (vc) {
+            return api.downloadInfo(pkg, vc);
+          } else {
+            return api.downloadInfo(pkg, versionCode);
+          }
         })
         .then(function (info) {
           console.log('%j', info);
@@ -15,4 +19,4 @@ function getDownloadInfo (pkg) {
     });
 }
 
-getDownloadInfo('air.WatchESPN');
+getDownloadInfo(process.argv[2] || 'air.WatchESPN', process.argv[3]);
