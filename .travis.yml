@@ -1,10 +1,10 @@
 language: node_js
 node_js:
-  - '8'
+- '8'
 script:
-  - npm test
+- npm test
 env:
   global:
-    - secure: "BZ2tPb/zQoqTKsBAcIdn/YPLJAmmJLih0NtdmOZl0H2c+nl57EC2rVIdm8e0V8G2B2Ho3L5KoLiiK0LafulCRWZ/sL/vR09kGMAccGR/qITkQ4FFWm1dbdoD00G9GHz2/7igyFhgmJ7zpNTkd8ND4k++mDHmLgh40Tg0TU/Ej8Q="
-    - secure: "Qg60PWwbOpVTjaRHA5D2lUBAIFwFJ5iLMjlMIyKpzlXIUSxBYg7xpZSfM+sA7vDHejlIsCCgMakyexWNbBj8po3DeRv9kZKfp44/SYoGhqFGEYzifmbXWbeJfBpouIJ1t/1YBUoBjHP190+3QnzDsyvrzJtmROPkRkW752SYco0="
-    - secure: "Tc2RSamcEEHUqPek2t1jQWCc/ZImEgB5wF3TsWPvJ9Wx/NbMLI50yZygWR+yB9D0i6bpn/rcCbGMXVkX0qpVE0/df3KIieR23ftWbaIH1HtJcpCWY2qXdzyUAMncVrnVi3WxJsREV9on8IAjINbhalwVK4Ygoy3E3XD6iV2ibeE="
+  - secure: COcO9tBeh2/zFKnDJ9HB71zyapcc2J0tPGFrzhFg3ExGWjedq3JzkkpSiF7rj85EH3s/t6r+oGRlbtIbKM8fN38/3k5tEdHF1w3mkjZAKbcpSEu8sww0rbXwx09FUrCf+X3jn5wYxgg0+9maNk4ulBNMckvSc29sj0ZSdXtgmh0=
+  - secure: cTiuWxrLSusTbNue9JBFuZSFxBkYnYt18LORemfku1HiIijbrIgVyUJh3GHIKcJTeJdCYi8HEgAIRkAgEFG1ejgakO/U3I8D0xLzdME87laXA/GAKrwDMA+B25N98mfrXoxy37/GVWAf12ee5EszojVa50f0G3NIOr0gBSDiYUQ=
+  - secure: AdvdAXE8/jRPOtmNVyuYL4dezvbj+2Itd3YvUbZ+9b7sSq3Boc6COvcu66NtTMMeMawpVepH1BIAe3J8HPHeCrwLAlURSVBnsg3dlcepWLCrPKblhdlriiO1NpN+DgrmHtM17L6Dit7H5woNsJcz484dLlWVoBMxHLst58YIePg=

@@ -7,12 +7,11 @@
 
 Call Google Play APIs from Node. You might want to check out the [CLI](https://github.com/dweinstein/node-google-play-cli) package as well.
 
-By default behaves like a Nexus 5X device with SDK 23 for app downloads.
+By default behaves like a Nexus device with SDK 23 for app downloads.
 
 # USAGE
 
 ```javascript
-// assumes android id of a Nexus 5X device checked in w/ Play Store 6.8.44.F
 var api = require('gpapi').GooglePlayAPI({
   username: user,
   password: pass,
@@ -52,6 +51,7 @@ The options accepted:
 The default `apiUserAgent` and `downloadUserAgent` is from  Nexus 5X device, w/
 Play Store version 6.8.44:
 
+e.g.,:
 ```
 const USER_AGENT = (
     'Android-Finsky/6.8.44.F-all%20%5B0%5D%203087104 ' +
@@ -200,4 +200,3 @@ Use env variable `DEBUG` i.e., `DEBUG=gp:api` to enable debug output. This is do
 
 # NOTES
 
-- This client turns all byte fields to strings.
