@@ -5,6 +5,6 @@ script:
 - npm test
 env:
   global:
-  - secure: cuS73KGRp7NHsZ6/5CAyQFCzsh9uw+Qr4VDIUSUO5raYPZdCrRZKucIf3v0wf8WEQGwTIa49Uv+sGHAT7MDW2f1cmOre+Y3c/Wa5uBF/7gg6U8TxINOJqClgRcOPoIVhHUeg+XFsErmjJ0YhlcK5kTnnct3j5SaXmbmU2qVMLEU=
-  - secure: AX7+u4a+yP3j39C2aq0hpmU/+KiNK40+VzTk0GBi8zuoh+ExEiV+q0qVLkOKq69REL3pUU36/Om20Log4ORqOrb0gXhor4WsAF5cnRq439P9Kio2jFRiQ+bRWhE7nu46gPdPXy/hd2KRD4QDjqeD9zUMGEAKAfPpGBxeyMaD/D0=
-  - secure: Nl26k44v3xMrJKQ3tram2uz4lb0A6RTXOutoblRMr8OhDziW9XDYqPnLayQymjqltxiXlv4jzWqjPsFYeSQ/PE/d6F3xyCGgLipbrlY9Rw+2k/mnH6LIBZXucAxLBiE4oj5dJIohgE5nsFlTIYX5gKyu6c7gt3khQE/FMK4xGC4=
+  - secure: COcO9tBeh2/zFKnDJ9HB71zyapcc2J0tPGFrzhFg3ExGWjedq3JzkkpSiF7rj85EH3s/t6r+oGRlbtIbKM8fN38/3k5tEdHF1w3mkjZAKbcpSEu8sww0rbXwx09FUrCf+X3jn5wYxgg0+9maNk4ulBNMckvSc29sj0ZSdXtgmh0=
+  - secure: cTiuWxrLSusTbNue9JBFuZSFxBkYnYt18LORemfku1HiIijbrIgVyUJh3GHIKcJTeJdCYi8HEgAIRkAgEFG1ejgakO/U3I8D0xLzdME87laXA/GAKrwDMA+B25N98mfrXoxy37/GVWAf12ee5EszojVa50f0G3NIOr0gBSDiYUQ=
+  - secure: AdvdAXE8/jRPOtmNVyuYL4dezvbj+2Itd3YvUbZ+9b7sSq3Boc6COvcu66NtTMMeMawpVepH1BIAe3J8HPHeCrwLAlURSVBnsg3dlcepWLCrPKblhdlriiO1NpN+DgrmHtM17L6Dit7H5woNsJcz484dLlWVoBMxHLst58YIePg=
