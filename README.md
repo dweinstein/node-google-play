@@ -42,7 +42,9 @@ The options accepted:
   language: 'en_US',
   requestsDefaultParams: requestsDefaultParams,
   apiUserAgent: USER_AGENT,
-  downloadUserAgent: DOWNLOAD_MANAGER_USER_AGENT
+  downloadUserAgent: DOWNLOAD_MANAGER_USER_AGENT,
+  useCache:true,
+  debug: false
 }
 ```
 
@@ -74,9 +76,10 @@ Note that you'll need to grab the device-id (`ANDROID_ID`) and associated
 user-agents for best performance of the library.
 
 - `ANDROID_ID` - the ID for the device for Google. This is the GSF ID *not* the
-  id from dialing `*#*#8255#*#*`. You can get the gsf id e.g., using the
+  id from dialing `*#*#8255#*#*`. You can get the gsf id e.g., using this following app: 
   [device id
   app](https://play.google.com/store/apps/details?id=com.evozi.deviceid&hl=en)
+  **WARNING**: This is not the androidId but the GSF Id that is needed by the library
 
 - Another way is to setup an HTTP proxy and install a CA to the device to see
   the network traffic. Here is an example from a
@@ -96,6 +99,15 @@ Note that this library uses the [`requests` module](https://github.com/request/r
 
 Use env variable `DEBUG` i.e., `DEBUG=gp:api` to enable debug output. This is done via [request-debug](https://github.com/request/request-debug).
 
+You can provide the debug option too.
+```js
+{
+  username: username,
+  password: password,
+  androidId: androidId,
+  debug: false
+}
+```
 
 # EXAMPLES
 
