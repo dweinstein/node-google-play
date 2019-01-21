@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/dweinstein/node-google-play.svg?branch=master)](https://travis-ci.org/dweinstein/node-google-play)
 [![npm](https://img.shields.io/npm/dm/gpapi.svg)](https://www.npmjs.com/package/gpapi)
 
+For a rust version of this library check out [rs-gpapi](https://github.com/dweinstein/rs-google-play).
+
 # SYNOPSIS
 
 Call Google Play APIs from Node. You might want to check out the [CLI](https://github.com/dweinstein/node-google-play-cli) package as well.
