@@ -1,0 +1,79 @@
+// Note: messages only include fields needed for APKfetch to work
+
+message AndroidCheckinRequest {
+  optional int64 id = 2;
+  optional AndroidCheckinProto checkin = 4;
+  optional string marketCheckin = 8;
+  repeated string accountCookie = 11;
+  optional int32 version = 14;
+  optional DeviceConfigurationProto deviceConfiguration = 18;
+  optional int32 fragment = 20;
+}
+message AndroidCheckinProto {
+  optional AndroidBuildProto build = 1;
+}
+message AndroidBuildProto {
+  optional int64 timestamp = 7;
+  optional int32 sdkVersion = 10;
+}
+message DeviceConfigurationProto {
+  optional int32 touchScreen = 1;
+  optional int32 keyboard = 2;
+  optional int32 navigation = 3;
+  optional int32 screenLayout = 4;
+  optional bool hasHardKeyboard = 5;
+  optional bool hasFiveWayNavigation = 6;
+  optional int32 screenDensity = 7;
+  optional int32 glEsVersion = 8;
+  repeated string systemSharedLibrary = 9;
+  repeated string systemAvailableFeature = 10;
+  repeated string nativePlatform = 11;
+  optional int32 screenWidth = 12;
+  optional int32 screenHeight = 13;
+}
+message AndroidCheckinResponse {
+  optional fixed64 androidId = 7;
+  optional fixed64 securityToken = 8;
+}
+message ResponseWrapper {
+  optional Payload payload = 1;
+  optional ServerCommands commands = 2;
+}
+message ServerCommands {
+  optional string displayErrorMessage = 2;
+}
+message Payload {
+  optional DetailsResponse detailsResponse = 2;
+  optional BuyResponse buyResponse = 4;
+  optional DeliveryResponse deliveryResponse = 21;
+}
+message BuyResponse {
+  optional PurchaseStatusResponse purchaseStatusResponse = 39;
+}
+message PurchaseStatusResponse {
+  optional AndroidAppDeliveryData appDeliveryData = 8;
+}
+message AndroidAppDeliveryData {
+  optional string downloadUrl = 3;
+  repeated HttpCookie downloadAuthCookie = 5;
+}
+message HttpCookie {
+  optional string name = 1;
+  optional string value = 2;
+}
+message DetailsResponse {
+  optional DocV2 docV2 = 4;
+}
+message DocV2 {
+  optional DocumentDetails details = 13;
+}
+message DocumentDetails {
+  optional AppDetails appDetails = 1;
+}
+message AppDetails {
+  optional int32 versionCode = 3;
+}
+message DeliveryResponse {
+  optional int32 status = 1;
+  optional AndroidAppDeliveryData appDeliveryData = 2;
+}

@@ -41,6 +41,7 @@
     "request": "^2.69.0",
     "request-debug": "^0.2.0",
     "rsa-pem-from-mod-exp": "^0.8.4",
+    "shell-escape": "^0.2.0",
     "split": "^1.0.0",
     "through2": "^2.0.1"
   },
